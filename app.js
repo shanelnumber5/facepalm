@@ -63,7 +63,7 @@ const profiles = {
   comments: '12 Comments',
   shares: '3 Shares',
 
-  friends: ['kendra', 'dale', 'ashley']
+  friends: ['mara', 'veronica']
 },
 mara: {
   icon: '🚑',
@@ -125,7 +125,82 @@ mara: {
   comments: '0 Comments',
   shares: '0 Shares',
 
-  friends: ['clark', 'kendra', 'ashley']
+  friends: ['clark', 'veronica']
+},
+veronica: {
+  icon: '🍷',
+  name: 'Veronica “Cabernet Live” Vale',
+  label: 'Performative Socialite Spiral',
+  archetype: 'Chaotic Neutral · Human · Level 7 Lifestyle Curator',
+  banner: 'images/veronica-banner.jpg',
+
+  tagline: 'Curating the moment. Broadcasting the feeling.',
+
+  bio: 'Veronica treats social media as both stage and audience. She presents her life as a curated sequence of moments, often elevated beyond their original context. Her posts shift quickly from celebratory to confrontational, especially after extended evening “reflection.”',
+
+  about: [
+    { icon: '🏠', text: 'Lives in <strong>Small Town, MT</strong> · Prominent neighborhood presence' },
+    { icon: '🍷', text: 'Enjoys wine as both lifestyle and narrative device' },
+    { icon: '🎭', text: 'Frames everyday events as high-stakes social episodes' },
+    { icon: '📣', text: 'Publicly reacts to community decisions in real time' },
+    { icon: '🧠', text: 'High emotional expression · Low situational filtering' },
+
+    { 
+      icon: '🗑️', text: 'Deletes posts after backlash or direct confrontation' ,
+      text: 'Banner: <a href="https://www.pexels.com/photo/house-surrounded-with-trees-photo-1671846/" target="_blank">Benjamin Lehman · Pexels</a>',
+    }
+  ],
+
+  stats: {
+    'PERFORMATIVE CHARISMA': 17,
+    'IMPULSE CONTROL': 4,
+    'PUBLIC DRAMA OUTPUT': 18,
+    'ACCOUNTABILITY': 5,
+    'SOCIAL AWARENESS': 6,
+    'POST DELETION SPEED': 16
+  },
+
+  skills: [
+    { name: 'Narrative Escalation', val: '+10', prof: true },
+    { name: 'Emotional Broadcasting', val: '+9', prof: true },
+    { name: 'Event Reframing', val: '+8', prof: true },
+    { name: 'Timing Awareness', val: '-5', prof: false },
+    { name: 'Private Conflict Resolution', val: '-6', prof: false }
+  ],
+
+  specialAbility: '“Going Live Emotionally” (1/night)',
+
+  passiveNote: 'Passive: Delete After Impact. Posts remain visible long enough to generate reactions before being removed, preserving the outcome while obscuring the source.',
+
+  post: `I’m honestly shocked at the decision to cancel such a beloved community event.
+
+        Some of us put a lot of time and energy into making these nights special, and it’s disappointing to see that effort dismissed over concerns that feel… selective.
+
+        There are ways to manage environments responsibly without shutting things down entirely.
+
+        Just because something requires oversight doesn’t mean it should be removed altogether.
+
+        Also, I’m starting to question certain leadership figures and the kind of image they’re choosing to project lately. Not exactly the example I would expect for this community.
+
+        Some comparisons are starting to feel a little too accurate.
+
+        Just saying.
+
+        Also, I’m starting to question certain leadership figures and the kind of image they’re choosing to project lately.
+
+        Not exactly the example I would expect for this community.
+
+        At a certain point, the comparisons start writing themselves.
+
+        And no, I’m not the only one noticing.`,
+
+
+  postDate: 'Late Evening',
+  reactions: '14',
+  comments: '23 Comments',
+  shares: '2 Shares',
+
+  friends: ['clark', 'mara']
 }
 };
 
