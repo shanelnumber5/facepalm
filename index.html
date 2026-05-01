@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>facepalm</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">facepalm</div>
+    <nav class="topnav">
+      <button type="button" class="active" id="tnHome" onclick="nav('home')">🏠 Home</button>
+      <button type="button" id="tnFriends" onclick="nav('friends')">👥 Friends</button>
+      <button type="button" id="tnAbout" onclick="nav('about')">ℹ️ About</button>
+    </nav>
+    <div class="top-icons">
+      <button class="top-icon-btn" title="Messenger">💬</button>
+      <button class="top-icon-btn" title="Notifications">🔔</button>
+    </div>
+  </header>
+
+  <nav class="bottom-nav" aria-label="Mobile navigation">
+    <div class="bottom-nav-inner">
+      <button type="button" class="active" id="bnHome" onclick="nav('home')"><span class="nav-icon">🏠</span>Home</button>
+      <button type="button" id="bnFriends" onclick="nav('friends')"><span class="nav-icon">👥</span>"Friends"</button>
+      <button type="button" id="bnAbout" onclick="nav('about')"><span class="nav-icon">ℹ️</span>About</button>
+    </div>
+  </nav>
+
+  <div class="view active" id="viewHome">
+    <div class="home-wrap">
+      <article class="shanel-card">
+        <div class="cover-area">
+          <img src="images/shanel-banner.png" alt="Shanel banner" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+          <div class="cover-placeholder" style="display:none;"><small>images/shanel-banner.png</small></div>
+        </div>
+        <div class="shanel-identity">
+          <div class="shanel-avatar-wrap">
+            <div class="big-avatar">👀</div>
+            <div class="shanel-name-area">
+              <div class="shanel-name">L0g1c F@11acy</div>
+              <div class="shanel-role">Facepalm Character Curator Extraordinaire</div>
+            </div>
+          </div>
+          <p class="shanel-bio">I do not have the "facepalm" app. I use the browser version out of principle to keep up with the town drama. I am not participating or giving my money to Zuckerberg.</p>
+          <div class="shanel-meta">
+            <span>👀 <strong>Drama Lover</strong></span>
+            <span>🌐 <strong>Browser-Only. No App.</strong></span>
+            <span>📍 <strong>Small Town, MT</strong></span>
+            <span>🗓️ <strong>Never Joined</strong></span>
+          </div>
+        </div>
+      </article>
+
+      <div class="panel">
+        <div class="panel-title">People You Might Know.</div>
+        <div class="profile-grid" id="homeProfileGrid"></div>
+      </div>
+
+      <article class="post-card">
+        <div class="post-head">
+          <div class="post-avatar">👀</div>
+          <div class="post-head-text">
+            <div class="post-name">L0g1c F@11acy</div>
+            <div class="post-meta-line">📌 Pinned · How This Works · 🌐</div>
+          </div>
+          <span class="post-dots">···</span>
+        </div>
+        <div class="post-body">
+          Each profile above is a TTRPG character sheet LARPING as a facepalm user.<br><br>
+          Click a name to read their full sheet: backstory, stats, skills, and their most representative post. Use <strong>"Friends"</strong> to browse everyone. Use <strong>Home</strong> to come back here.<br><br>
+          <em>I am the curator. My stats are not listed, but if you are interested in more of my work, visit <a href="https://www.shanellockeart.com" target="_blank">Shanel Locke Art</a>.</em>
+        </div>
+        <div class="reaction-bar">
+          <span>👍 👀 ☕ 4</span>
+          <span>106 comments</span>
+        </div>
+        <div class="reaction-btns">
+          <button class="rxn-btn">👍 Like</button>
+          <button class="rxn-btn">💬 Comment</button>
+          <button class="rxn-btn">↗️ Share</button>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="view" id="viewProfile">
+    <div class="profile-wrap">
+      <div id="profileCard"></div>
+    </div>
+  </div>
+
+  <div class="view" id="viewFriends">
+    <div class="friends-wrap">
+      <div class="panel">
+        <div class="friends-section-header">Friends</div>
+        <p class="friends-subtitle">Field notes from years of observation. Recurring archetypes, consistent behaviors, predictable outcomes. Click a profile to open their full character sheet.</p>
+        <div class="directory-grid" id="friendsDirectory"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="view" id="viewAbout">
+    <div class="project-wrap">
+      <div class="panel">
+        <h2>About This Project</h2>
+        <p>This is a TTRPG character collection for the <strong>Character Creation Challenge (May 2026)</strong>. The format is a facepalm-style group page which is designed to feel familiar and recognizable.</p>
+
+        <p>These are not real people. If you think you recognize someone, that says more about the environment than the individual. These archetypes are built from repeated online behaviors: belief spirals, soft pitches, nostalgia loops, and vague posts that generate more theories than answers.</p>
+
+        <p>The TTRPG stats are mapped to social media behaviors on purpose. Wisdom fluctuates. Charisma carries more than it should. Skills are exaggerated, but not invented. This is a system applied to something that already behaves like one.</p>
+
+        <p>There are no hit points. Nothing here resolves cleanly enough for that.</p>
+
+        <p>All artwork is hand-drawn. Profile images are embedded directly into the page.</p>
+
+        <div class="divider"></div>
+        <h3>Image Credits</h3>
+        <p>
+        Banner images sourced from Unsplash, Pexels, and similar free-use libraries.
+        Individual credits are attributed where required.
+        </p>
+        <ul>
+          <li><b>Clark Valve Banner</b> | William Gevorg Urban (Pexels) | Retro orange Corvette parked outdoors under canopy, capturing classic automotive design in natural light.</li>
+          <li><b>Mara Greene Banner</b> | Frank Van Esch (Pexels) | An adult goat stands in a rustic barn, surrounded by hay, in a rural setting.</li>
+        </ul>
+
+        <div class="divider"></div>
+        <p class="project-footer">
+          Made for the TTRPG Character Creation Challenge Jam · itch.io<br>
+          🎨 <a href="https://itch.io/jam/ttrpg-character-creation-challenge-jam-2" target="_blank">TTRPG Character Creation Challenge Jam</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal-overlay" id="modal" onclick="closeModal()">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
