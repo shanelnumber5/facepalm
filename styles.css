@@ -57,6 +57,26 @@ ul { list-style: none; }
   margin-top: -44px;
   margin-bottom: 12px;
 }
+
+.large-avatar {
+  width: 140px;
+  height: 140px;
+}
+
+.shanel-large-avatar {
+  width: 150px;
+  height: 150px;
+  font-size: 0;
+}
+
+.shanel-large-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
 .big-avatar, .profile-big-avatar {
   width: 112px;
   height: 112px;
@@ -68,7 +88,24 @@ ul { list-style: none; }
   font-size: 3rem;
   flex-shrink: 0;
   box-shadow: 0 2px 8px rgba(0,0,0,.18);
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
 }
+
+.about-portrait.self {
+  max-width: 320px;
+  margin: 0 auto 16px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.about-portrait.self img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
 .shanel-name-area, .profile-name-block {
   padding: 8px 0 6px;
   min-width: 0;
@@ -350,4 +387,19 @@ ul { list-style: none; }
   max-height: 80vh;
   object-fit: contain;
   border-radius: 12px;
+}
+
+.big-avatar.shanel-large-avatar {
+  width: 150px !important;
+  height: 150px !important;
+  margin-top: -70px !important;
+  font-size: 0 !important;
+}
+
+.big-avatar.shanel-large-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
 }
