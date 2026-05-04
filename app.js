@@ -131,8 +131,9 @@ mara: {
   friends: ['clark', 'veronica']
 },
 veronica: {
-  icon: '🍷',
+  icon: 'images/veronica-profile.jpg',
   name: 'Veronica “Cabernet Live” Vale',
+  portrait: 'images/veronica-profile.jpg',
   label: 'Performative Socialite Spiral',
   archetype: 'Chaotic Neutral · Human · Level 7 Lifestyle Curator',
   banner: 'images/veronica-banner.jpg',
