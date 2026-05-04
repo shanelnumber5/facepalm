@@ -64,7 +64,7 @@ const profiles = {
   comments: '12 Comments',
   shares: '3 Shares',
 
-  friends: ['mara', 'veronica']
+  friends: ['mara', 'veronica', 'derek']
 },
 mara: {
   icon: 'images/mara-profile.jpg',
@@ -128,7 +128,7 @@ mara: {
   comments: '0 Comments',
   shares: '0 Shares',
 
-  friends: ['clark', 'veronica']
+  friends: ['clark', 'veronica', 'derek']
 },
 veronica: {
   icon: 'images/veronica-profile.jpg',
@@ -205,8 +205,74 @@ veronica: {
   comments: '23 Comments',
   shares: '2 Shares',
 
-  friends: ['clark', 'mara']
-}
+  friends: ['clark', 'mara', 'derek']
+},
+derek: {
+  icon: 'images/derek-profile.jpg',
+  portrait: 'images/derek-profile.jpg',
+  name: 'Derek "Is This Still Available" Vance',
+  label: 'YardSale Lurker',
+  archetype: 'True Neutral · Human · Level 5 Opportunistic Buyer',
+  banner: 'images/derek-banner.jpg',
+
+  tagline: 'Interested. Not desperate.',
+
+  bio: 'Derek exists on facepalm primarily to locate underpriced goods. He lives just far enough outside of Small Town, MT to not fully understand the social context, but close enough to participate when it benefits him. He occasionally comments to appear normal, but the timing and tone rarely align with the conversation.',
+
+  about: [
+    { icon: '🏙️', text: 'Lives in <strong>Nearby City, MT</strong> (30 minutes away)' },
+    { icon: '🛒', text: 'Uses <strong>YardSale</strong> almost exclusively' },
+    { icon: '🔧', text: 'Looking for instrument parts, computer components, and anything useful' },
+    { icon: '💬', text: 'Occasionally comments to appear socially active' },
+    { icon: '⏱️', text: 'Response timing is often slightly off' },
+    { 
+      icon: '📦', 
+      text: 'Banner: <a href="https://unsplash.com/photos/audio-mixer-set-4h0HqC3K4-c" target="_blank">Martijn Baudoin · Unsplash</a>' 
+    }
+  ],
+
+  stats: {
+    'PRICE AWARENESS': 18,
+    'SOCIAL TIMING': 3,
+    'PERSISTENCE': 16,
+    'CONTEXT READING': 2,
+    'DEAL CONFIDENCE': 19,
+    'SELF-AWARENESS': 4
+  },
+
+  skills: [
+    { name: 'Is This Still Available', val: '+12', prof: true },
+    { name: 'Lowball Framing', val: '+10', prof: true },
+    { name: 'Part Compatibility Guessing', val: '+8', prof: true },
+    { name: 'Reading the Room', val: '-6', prof: false },
+    { name: 'Ending Conversations Normally', val: '-5', prof: false }
+  ],
+
+  specialAbility: 'DM Sent (Passive)',
+
+  passiveNote: 'Passive: Can initiate a private message from any public post regardless of context. Messages often lack greeting, punctuation, or emotional temperature.',
+
+  post: `Interested.
+
+Is this still available?
+
+Would you take $40?
+
+Also where are you located.
+
+I am in the city but could come down this weekend depending.
+
+Let me know.
+
+Thanks.`,
+
+  postDate: 'Marketplace-adjacent evening',
+  reactions: '3',
+  comments: '1 Comment',
+  shares: '0 Shares',
+
+  friends: ['clark', 'mara', 'veronica']
+},
 };
 
 
