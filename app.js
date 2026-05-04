@@ -1,6 +1,7 @@
 const profiles = {
  clark: {
-  icon: '🚰',
+  icon: 'images/clark-profile.jpg',
+  portrait: 'images/clark-profile.jpg',
   name: 'Clark “Not Speaking Officially” Valve',
   label: 'Civic Disclaimer Engine',
   archetype: 'Lawful Neutral · Human · Level 8 Municipal Adjacent',
@@ -66,8 +67,9 @@ const profiles = {
   friends: ['mara', 'veronica']
 },
 mara: {
-  icon: '🚑',
-  name: 'Mara “Vitals Check” Greene',
+  icon: 'images/mara-profile.jpg',
+  portrait: 'images/mara-profile.jpg',
+  name: 'Mara “Vitals Check” Greenee',
   label: 'Trauma Authority Loop',
   archetype: 'Neutral Good · Human · Level 6 Volunteer Responder',
   banner: 'images/mara-banner.jpg',
@@ -85,9 +87,10 @@ mara: {
     { icon: '🧠', text: 'Frames personal experience as expertise' },
     { icon: '🗣️', text: 'Shares information with certainty, regardless of source quality' },
 
+    { icon: '🧩', text: 'Past experiences strongly shape current worldview' },
     { 
-      icon: '🧩', text: 'Past experiences strongly shape current worldview',
-      text: 'Banner: <a href="https://www.pexels.com/photo/goat-at-farm-20952546/" target="_blank">Frank Van Esch · Pexels</a>',
+      icon: '🎨',
+      text: 'Banner: <a href="https://www.pexels.com/photo/goat-at-farm-20952546/" target="_blank">Frank Van Esch · Pexels</a>'
     }
   ],
 
@@ -145,9 +148,10 @@ veronica: {
     { icon: '📣', text: 'Publicly reacts to community decisions in real time' },
     { icon: '🧠', text: 'High emotional expression · Low situational filtering' },
 
+    { icon: '🗑️', text: 'Deletes posts after backlash or direct confrontation' },
     { 
-      icon: '🗑️', text: 'Deletes posts after backlash or direct confrontation' ,
-      text: 'Banner: <a href="https://www.pexels.com/photo/house-surrounded-with-trees-photo-1671846/" target="_blank">Benjamin Lehman · Pexels</a>',
+      icon: '🎨',
+      text: 'Banner: <a href="https://www.pexels.com/photo/house-surrounded-with-trees-photo-1671846/" target="_blank">Benjamin Lehman · Pexels</a>'
     }
   ],
 
@@ -204,6 +208,17 @@ veronica: {
 }
 };
 
+
+function avatarMarkup(profile, className = '') {
+  const content = profile.icon && profile.icon.includes('images/')
+    ? `<img src="${profile.icon}" alt="${profile.name}">`
+    : profile.icon;
+
+  return className
+    ? `<div class="${className}">${content}</div>`
+    : content;
+}
+
 function nav(view, profileId) {
   document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
   ['tnHome', 'tnFriends', 'tnAbout', 'bnHome', 'bnFriends', 'bnAbout'].forEach(id => {
@@ -234,7 +249,7 @@ function nav(view, profileId) {
 function renderHomeGrid() {
   document.getElementById('homeProfileGrid').innerHTML = Object.entries(profiles).map(([id, p]) => `
     <button class="profile-tile" type="button" onclick="nav('profile','${id}')">
-      <div class="small-avatar">${p.icon}</div>
+      ${avatarMarkup(p, 'small-avatar')}
       <div class="tile-name">${p.name}</div>
       <div class="tile-label">${p.label}</div>
     </button>
@@ -244,7 +259,7 @@ function renderHomeGrid() {
 function renderFriendsDir() {
   document.getElementById('friendsDirectory').innerHTML = Object.entries(profiles).map(([id, p]) => `
     <button class="directory-card" type="button" onclick="nav('profile','${id}')">
-      <div class="dir-thumb">${p.icon}</div>
+      ${avatarMarkup(p, 'dir-thumb')}
       <div class="dir-info">
         <div class="dir-name">${p.name}</div>
         <div class="dir-label">${p.label}</div>
@@ -271,8 +286,8 @@ function renderProfile(id, tab = 'about') {
 
       <div class="profile-identity">
         <div class="profile-avatar-row">
-          <div class="profile-big-avatar">${p.icon}</div>
-          <div class="profile-name-block">
+          ${avatarMarkup(p, 'profile-big-avatar')}
+          <div class=\"profile-name-block\">
             <div class="profile-name">${p.name}</div>
             <div class="profile-archetype">${p.archetype}</div>
             <div class="profile-friends-count">${p.friends.length} friends</div>
@@ -280,7 +295,7 @@ function renderProfile(id, tab = 'about') {
         </div>
 
         <div class="profile-action-row">
-          <button class="btn-primary" onclick="openModal('${p.icon}')">👀 Observe</button>
+          <button class=\"btn-primary\" onclick=\"openModal('${p.icon}')\">👀 Observe</button>
           <button class="btn-secondary">📨 Message (Ignored)</button>
           <button class="btn-secondary" onclick="nav('home')">← Back</button>
         </div>
@@ -330,8 +345,13 @@ function renderSkills(p) {
 function renderAboutTab(p) {
   return `
     <div class="tab-content-grid about-tab-grid refined-about">
-      <div class="panel about-panel">
+      <div class="panel about-panel about-full">
         <div class="about-section-title">About</div>
+        ${p.portrait ? `
+          <div class="about-portrait">
+            <img src="${p.portrait}" alt="${p.name}">
+          </div>
+        ` : ''}
         <p class="profile-bio">${p.bio}</p>
         <div class="divider"></div>
         <p><em>${p.tagline}</em></p>
@@ -339,7 +359,7 @@ function renderAboutTab(p) {
         ${renderAboutItems(p)}
       </div>
 
-      <div class="panel about-panel">
+      <div class="panel about-panel stats-full">
         <div class="about-section-title">📊 Character Stats</div>
         <div class="stat-block">${renderStats(p)}</div>
         <div class="divider"></div>
@@ -371,7 +391,7 @@ function renderPostsTab(p) {
 
       <article class="post-card">
         <div class="post-head">
-          <div class="post-avatar">${p.icon}</div>
+          ${avatarMarkup(p, 'post-avatar')}
           <div class="post-head-text">
             <div class="post-name">${p.name}</div>
             <div class="post-meta-line">${p.postDate} · 🌐</div>
@@ -394,7 +414,12 @@ function renderPostsTab(p) {
 }
 
 function openModal(icon) {
-  document.getElementById('modalContent').textContent = icon;
+  const modalContent = document.getElementById('modalContent');
+  if (icon && icon.includes('images/')) {
+    modalContent.innerHTML = `<img src="${icon}" alt="Profile image">`;
+  } else {
+    modalContent.textContent = icon;
+  }
   document.getElementById('modal').classList.add('open');
 }
 
