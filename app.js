@@ -2,6 +2,7 @@ const profiles = {
  clark: {
   icon: 'images/clark-profile.jpg',
   portrait: 'images/clark-profile.jpg',
+  imagePosition: 'center top',
   name: 'Clark “Not Speaking Officially” Valve',
   label: 'Civic Disclaimer Engine',
   archetype: 'Lawful Neutral · Human · Level 8 Municipal Adjacent',
@@ -68,6 +69,7 @@ const profiles = {
 mara: {
   icon: 'images/mara-profile.jpg',
   portrait: 'images/mara-profile.jpg',
+  imagePosition: 'center top',
   name: 'Mara “Vitals Check” Greenee',
   label: 'Trauma Authority Loop',
   archetype: 'Neutral Good · Human · Level 6 Volunteer Responder',
@@ -115,11 +117,11 @@ mara: {
 
   post: `Vitals check at the Senior Center this Monday at 5:30pm.
 
-        It’s important to stay informed about what’s really going on with our health and not just accept everything at face value.
+It’s important to stay informed about what’s really going on with our health and not just accept everything at face value.
 
-        There’s a lot more people should be aware of, especially when it comes to long-term effects that aren’t always talked about.
+There’s a lot more people should be aware of, especially when it comes to long-term effects that aren’t always talked about.
 
-        Just something to think about.`,
+Just something to think about.`,
 
   postDate: 'March 25',
   reactions: '2',
@@ -132,6 +134,7 @@ veronica: {
   icon: 'images/veronica-profile.jpg',
   name: 'Veronica “Cabernet Live” Vale',
   portrait: 'images/veronica-profile.jpg',
+  imagePosition: 'center top',
   label: 'Performative Socialite Spiral',
   archetype: 'Chaotic Neutral · Human · Level 7 Lifestyle Curator',
   banner: 'images/veronica-banner.jpg',
@@ -176,25 +179,25 @@ veronica: {
 
   post: `I’m honestly shocked at the decision to cancel such a beloved community event.
 
-        Some of us put a lot of time and energy into making these nights special, and it’s disappointing to see that effort dismissed over concerns that feel… selective.
+Some of us put a lot of time and energy into making these nights special, and it’s disappointing to see that effort dismissed over concerns that feel… selective.
 
-        There are ways to manage environments responsibly without shutting things down entirely.
+There are ways to manage environments responsibly without shutting things down entirely.
 
-        Just because something requires oversight doesn’t mean it should be removed altogether.
+Just because something requires oversight doesn’t mean it should be removed altogether.
 
-        Also, I’m starting to question certain leadership figures and the kind of image they’re choosing to project lately. Not exactly the example I would expect for this community.
+Also, I’m starting to question certain leadership figures and the kind of image they’re choosing to project lately. Not exactly the example I would expect for this community.
 
-        Some comparisons are starting to feel a little too accurate.
+Some comparisons are starting to feel a little too accurate.
 
-        Just saying.
+Just saying.
 
-        Also, I’m starting to question certain leadership figures and the kind of image they’re choosing to project lately.
+Also, I’m starting to question certain leadership figures and the kind of image they’re choosing to project lately.
 
-        Not exactly the example I would expect for this community.
+Not exactly the example I would expect for this community.
 
-        At a certain point, the comparisons start writing themselves.
+At a certain point, the comparisons start writing themselves.
 
-        And no, I’m not the only one noticing.`,
+And no, I’m not the only one noticing.`,
 
 
   postDate: 'Late Evening',
@@ -207,6 +210,7 @@ veronica: {
 derek: {
   icon: 'images/derek-profile.jpg',
   portrait: 'images/derek-profile.jpg',
+  imagePosition: 'center center',
   name: 'Derek "Is This Still Available" Vance',
   label: 'YardSale Lurker',
   archetype: 'True Neutral · Human · Level 5 Opportunistic Buyer',
@@ -274,6 +278,7 @@ Thanks.`,
 grant: {
   icon: 'images/grant-profile.jpg',
   portrait: 'images/grant-profile.jpg',
+  imagePosition: 'center center',
   name: 'Grant "Market Rate" Halvorsen',
   label: 'Extractive Opportunist',
   archetype: 'Lawful Evil · Human · Level 9 Asset Repositioner',
@@ -336,6 +341,7 @@ Opportunities don’t wait around forever.`,
 bev: {
   icon: 'images/bev-profile.jpg',
   portrait: 'images/bev-profile.jpg',
+  imagePosition: 'center top',
   name: 'Bev "Just a Trim" Tanglewood',
   label: 'Gift Shop Expansionist',
   archetype: 'Neutral Evil · Human · Level 11 Legacy Stylist',
@@ -404,8 +410,15 @@ Some places could use that.`,
 
 
 function avatarMarkup(profile, className = '') {
-  const content = profile.icon && profile.icon.includes('images/')
-    ? `<img src="${profile.icon}" alt="${profile.name}">`
+  const pos = profile.imagePosition || 'center top';
+  const isImage = profile.icon && profile.icon.includes('images/');
+
+  const imgStyle = className === 'dir-thumb' || className === 'about-portrait'
+    ? `style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:${pos};display:block;"`
+    : `style="object-position:${pos}"`;
+
+  const content = isImage
+    ? `<img src="${profile.icon}" alt="${profile.name}" ${imgStyle}>`
     : profile.icon;
 
   return className
@@ -441,25 +454,36 @@ function nav(view, profileId) {
 }
 
 function renderHomeGrid() {
-  document.getElementById('homeProfileGrid').innerHTML = Object.entries(profiles).map(([id, p]) => `
-    <button class="profile-tile" type="button" onclick="nav('profile','${id}')">
+  const all = Object.entries(profiles);
+  // Shuffle and take 4
+  const picks = all
+    .slice()
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 4);
+
+  document.getElementById('homeProfileGrid').innerHTML = picks.map(([id, p]) => `
+    <div class="profile-tile" role="button" tabindex="0"
+         onclick="nav('profile','${id}')"
+         onkeydown="if(event.key==='Enter'||event.key===' ')nav('profile','${id}')">
       ${avatarMarkup(p, 'small-avatar')}
       <div class="tile-name">${p.name}</div>
       <div class="tile-label">${p.label}</div>
-    </button>
+    </div>
   `).join('');
 }
 
 function renderFriendsDir() {
   document.getElementById('friendsDirectory').innerHTML = Object.entries(profiles).map(([id, p]) => `
-    <button class="directory-card" type="button" onclick="nav('profile','${id}')">
+    <div class="directory-card" role="button" tabindex="0"
+         onclick="nav('profile','${id}')"
+         onkeydown="if(event.key==='Enter'||event.key===' ')nav('profile','${id}')">
       ${avatarMarkup(p, 'dir-thumb')}
       <div class="dir-info">
         <div class="dir-name">${p.name}</div>
         <div class="dir-label">${p.label}</div>
         <div class="dir-add-btn">View Profile</div>
       </div>
-    </button>
+    </div>
   `).join('');
 }
 
@@ -489,7 +513,7 @@ function renderProfile(id, tab = 'about') {
         </div>
 
         <div class="profile-action-row">
-          <button class=\"btn-primary\" onclick=\"openModal('${p.icon}')\">👀 Observe</button>
+          <button class="btn-primary" onclick="openModal(this)" data-icon="${p.icon}" data-name="${p.name.replace(/"/g, '&quot;')}">👀 View Photo</button>
           <button class="btn-secondary">📨 Message (Ignored)</button>
           <button class="btn-secondary" onclick="nav('home')">← Back</button>
         </div>
@@ -498,7 +522,7 @@ function renderProfile(id, tab = 'about') {
       <div class="profile-tab-bar">
         <button class="profile-tab ${tab === 'about' ? 'active' : ''}" onclick="renderProfile('${id}', 'about')">About</button>
         <button class="profile-tab ${tab === 'posts' ? 'active' : ''}" onclick="renderProfile('${id}', 'posts')">Posts</button>
-        <button class="profile-tab" onclick="nav('friends')">Friends</button>
+        <button class="profile-tab" onclick="nav('friends')">"Friends"</button>
       </div>
     </div>
 
@@ -538,22 +562,34 @@ function renderSkills(p) {
 
 function renderAboutTab(p) {
   return `
-    <div class="tab-content-grid about-tab-grid refined-about">
-      <div class="panel about-panel about-full">
-        <div class="about-section-title">About</div>
-        ${p.portrait ? `
-          <div class="about-portrait">
-            <img src="${p.portrait}" alt="${p.name}">
-          </div>
-        ` : ''}
-        <p class="profile-bio">${p.bio}</p>
-        <div class="divider"></div>
-        <p><em>${p.tagline}</em></p>
-        <div class="divider"></div>
-        ${renderAboutItems(p)}
+    <div class="about-tab-wrap">
+
+      <!-- TOP ROW: two columns -->
+      <div class="about-top-grid">
+
+        <!-- LEFT: portrait + bio + tagline -->
+        <div class="panel about-panel">
+          <div class="about-section-title">About</div>
+          ${p.portrait ? `
+            <div class="about-portrait">
+              <img src="${p.portrait}" alt="${p.name}">
+            </div>
+          ` : ''}
+          <p class="profile-bio">${p.bio}</p>
+          <div class="divider"></div>
+          <p style="font-size:.92rem; font-style:italic; color:var(--muted);">${p.tagline}</p>
+        </div>
+
+        <!-- RIGHT: about items with icons -->
+        <div class="panel about-panel">
+          <div class="about-section-title">Details</div>
+          ${renderAboutItems(p)}
+        </div>
+
       </div>
 
-      <div class="panel about-panel stats-full">
+      <!-- BOTTOM ROW: stats full width -->
+      <div class="panel about-panel">
         <div class="about-section-title">📊 Character Stats</div>
         <div class="stat-block">${renderStats(p)}</div>
         <div class="divider"></div>
@@ -564,13 +600,16 @@ function renderAboutTab(p) {
         <p class="passive-text">${p.passiveNote}</p>
       </div>
 
-
     </div>
   `;
 }
 
 function renderPostsTab(p) {
-  const postLines = p.post.split('\n').join('<br>');
+  // Convert blank lines to paragraph breaks, single newlines to <br>
+  const postHtml = p.post
+    .split(/\n\n+/)
+    .map(para => `<p>${para.trim().replace(/\n/g, '<br>')}</p>`)
+    .join('');
 
   return `
     <div class="posts-tab-grid">
@@ -592,7 +631,7 @@ function renderPostsTab(p) {
           </div>
           <span class="post-dots">···</span>
         </div>
-        <div class="post-body">${postLines}</div>
+        <div class="post-body">${postHtml}</div>
         <div class="reaction-bar">
           <span>👍 😡 😮 ${p.reactions}</span>
           <span>${p.comments} · ${p.shares}</span>
@@ -607,10 +646,12 @@ function renderPostsTab(p) {
   `;
 }
 
-function openModal(icon) {
+function openModal(btn) {
+  const icon = btn.dataset.icon;
+  const name = btn.dataset.name;
   const modalContent = document.getElementById('modalContent');
   if (icon && icon.includes('images/')) {
-    modalContent.innerHTML = `<img src="${icon}" alt="Profile image">`;
+    modalContent.innerHTML = `<img src="${icon}" alt="${name}">`;
   } else {
     modalContent.textContent = icon;
   }
