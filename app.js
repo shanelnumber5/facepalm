@@ -19,7 +19,6 @@ const profiles = {
     { icon: '⚖️', text: 'Frequently references potential legal action' },
     { icon: '🚗', text: 'Drives a Corvette · Parks it next to a trailer' },
     { icon: '🧾', text: 'Posts public information followed by personal escalation' },
-
     { 
       icon: '🎨', 
       text: 'Banner: <a href="https://www.pexels.com/photo/an-orange-corvette-parked-under-a-bridge-27303585/" target="_blank">William Gevorg Urban · Pexels</a>' 
@@ -64,7 +63,7 @@ const profiles = {
   comments: '12 Comments',
   shares: '3 Shares',
 
-  friends: ['mara', 'veronica', 'derek']
+  friends: ['veronica', 'derek', 'grant']
 },
 mara: {
   icon: 'images/mara-profile.jpg',
@@ -86,7 +85,6 @@ mara: {
     { icon: '📚', text: 'Self-taught in health topics · High confidence in conclusions' },
     { icon: '🧠', text: 'Frames personal experience as expertise' },
     { icon: '🗣️', text: 'Shares information with certainty, regardless of source quality' },
-
     { icon: '🧩', text: 'Past experiences strongly shape current worldview' },
     { 
       icon: '🎨',
@@ -148,7 +146,6 @@ veronica: {
     { icon: '🎭', text: 'Frames everyday events as high-stakes social episodes' },
     { icon: '📣', text: 'Publicly reacts to community decisions in real time' },
     { icon: '🧠', text: 'High emotional expression · Low situational filtering' },
-
     { icon: '🗑️', text: 'Deletes posts after backlash or direct confrontation' },
     { 
       icon: '🎨',
@@ -205,7 +202,7 @@ veronica: {
   comments: '23 Comments',
   shares: '2 Shares',
 
-  friends: ['clark', 'mara', 'derek']
+  friends: ['derek', 'grant']
 },
 derek: {
   icon: 'images/derek-profile.jpg',
@@ -225,8 +222,9 @@ derek: {
     { icon: '🔧', text: 'Looking for instrument parts, computer components, and anything useful' },
     { icon: '💬', text: 'Occasionally comments to appear socially active' },
     { icon: '⏱️', text: 'Response timing is often slightly off' },
+    { icon: '📦', text: 'Prefers deals that feel like he won the interaction' },
     { 
-      icon: '📦', 
+      icon: '🎨', 
       text: 'Banner: <a href="https://unsplash.com/photos/audio-mixer-set-4h0HqC3K4-c" target="_blank">Martijn Baudoin · Unsplash</a>' 
     }
   ],
@@ -271,7 +269,136 @@ Thanks.`,
   comments: '1 Comment',
   shares: '0 Shares',
 
-  friends: ['clark', 'mara', 'veronica']
+  friends: ['veronica', 'grant']
+},
+grant: {
+  icon: 'images/grant-profile.jpg',
+  portrait: 'images/grant-profile.jpg',
+  name: 'Grant "Market Rate" Halvorsen',
+  label: 'Extractive Opportunist',
+  archetype: 'Lawful Evil · Human · Level 9 Asset Repositioner',
+  banner: 'images/grant-banner.jpg',
+
+  tagline: 'Improving the area. One property at a time.',
+
+  bio: 'Grant presents himself as a community-minded investor, focused on “improving” underutilized properties. His projects consistently result in higher prices and reduced accessibility, which he frames as necessary progress. When deals do not go his way, his tone shifts quickly from polite to pointed, often reframing rejection as incompetence on the part of others.',
+
+  about: [
+    { icon: '🏠', text: 'Acquires older homes for renovation and repositioning' },
+    { icon: '📈', text: 'Prices units at “market rate,” regardless of local context' },
+    { icon: '🚗', text: 'Works at a used car dealership · strong sales background' },
+    { icon: '📉', text: 'Reacts poorly when business is not conducted through him' },
+    { icon: '✉️', text: 'Prefers indirect communication when expressing frustration' },
+    { icon: '🍸', text: 'Planning to open a bar despite limited industry experience' },
+    { 
+      icon: '🎨', 
+      text: 'Banner: <a href="https://unsplash.com/photos/modern-living-room-with-neutral-tones-and-natural-elements-tPz3Lhh3z_4" target="_blank">Brian Zajac · Unsplash</a>' 
+    }
+  ],
+
+  stats: {
+    'PRICE OPTIMIZATION': 19,
+    'COMMUNITY EMPATHY': 2,
+    'PERSISTENCE': 17,
+    'REPUTATION AWARENESS': 5,
+    'NEGOTIATION PRESSURE': 18,
+    'SELF-JUSTIFICATION': 20
+  },
+
+  skills: [
+    { name: 'Friendly Opening', val: '+10', prof: true },
+    { name: 'Price Anchoring', val: '+12', prof: true },
+    { name: 'Reframing Rejection', val: '+11', prof: true },
+    { name: 'Reading the Room', val: '-4', prof: false },
+    { name: 'Letting Things Go', val: '-6', prof: false }
+  ],
+
+  specialAbility: '“It’s Just Business” (Active)',
+
+  passiveNote: 'Passive: Market Correction. Any criticism is internally reframed as misunderstanding, allowing continued behavior without adjustment.',
+
+  post: `Just finished another property that was sitting unused for years.
+
+It’s amazing what a little vision and investment can do for a place.
+
+I know some people don’t like seeing prices go up, but that’s what happens when something is actually improved and brought up to standard.
+
+If we want this area to grow, we have to stop thinking small.
+
+Opportunities don’t wait around forever.`,
+
+  postDate: 'Midday · Work Break',
+  reactions: '11',
+  comments: '18 Comments',
+  shares: '3 Shares',
+
+  friends: ['clark', 'mara']},
+bev: {
+  icon: 'images/bev-profile.jpg',
+  portrait: 'images/bev-profile.jpg',
+  name: 'Bev "Just a Trim" Tanglewood',
+  label: 'Gift Shop Expansionist',
+  archetype: 'Neutral Evil · Human · Level 11 Legacy Stylist',
+  banner: 'images/bev-banner.jpg',
+
+  tagline: 'Serving the community since 1986. Whether it asked or not.',
+
+  bio: 'Bev has been cutting hair since the mid-80s and speaks with the confidence of someone who stopped updating her techniques around the same time. She presents herself as sweet, helpful, and community-minded, but her generosity often arrives attached to boxes, displays, racks, and a suggestion that someone else should make room for her things.',
+
+  about: [
+    { icon: '✂️', text: 'Cutting hair since the mid-80s · Results vary dramatically' },
+    { icon: '🏠', text: 'Lives in <strong>Small Town, MT</strong>' },
+    { icon: '📦', text: 'Owns more inventory than any business technically requires' },
+    { icon: '🎁', text: 'Wants to add a gift shop section to every available surface' },
+    { icon: '😊', text: 'Polite tone · aggressive spatial expectations' },
+    { icon: '🪑', text: 'Has never seen an empty corner she did not consider underused' },
+    { 
+      icon: '🎨', 
+      text: 'Banner: <a href="https://unsplash.com/photos/collection-of-various-antique-objects-and-toys-x-OxyNc-6gc" target="_blank">Melanie Chan · Unsplash</a>' 
+    }
+  ],
+
+  stats: {
+    'LEGACY CONFIDENCE': 18,
+    'HAIRCUT ACCURACY': 3,
+    'INVENTORY VOLUME': 20,
+    'BOUNDARY AWARENESS': 2,
+    'FAKE NICE': 17,
+    'DISPLAY RACK DENSITY': 19
+  },
+
+  skills: [
+    { name: 'Backhanded Compliment', val: '+10', prof: true },
+    { name: 'Unrequested Merchandising', val: '+12', prof: true },
+    { name: 'Creating Shelf Space From Nothing', val: '+9', prof: true },
+    { name: 'Modern Layering Technique', val: '-7', prof: false },
+    { name: 'Accepting No', val: '-6', prof: false }
+  ],
+
+  specialAbility: 'I Brought a Few Things (Recharge 5-6)',
+
+  passiveNote: 'Passive: Inventory Creep. Any location Bev visits has a 40% chance of gaining a small display of handmade items, seasonal décor, or mystery stock with unclear pricing.',
+
+  post: `I have a few cute little things that would look just darling in someone’s front area.
+
+Nothing big.
+
+Just a small display.
+
+Maybe a shelf.
+
+Or a table.
+
+People love having something to browse while they wait, and honestly it would bring a little charm.
+
+Some places could use that.`,
+
+  postDate: 'Tuesday · After Closing',
+  reactions: '9',
+  comments: '14 Comments',
+  shares: '1 Share',
+
+  friends: ['veronica', 'grant', 'mara']
 },
 };
 

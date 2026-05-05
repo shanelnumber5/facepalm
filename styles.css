@@ -239,9 +239,17 @@ ul { list-style: none; }
 .passive-text { font-size: .82rem; color: var(--muted); line-height: 1.5; }
 
 .directory-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
-.directory-card { background: white; border-radius: var(--radius); overflow: hidden; text-align: left; display: flex; flex-direction: column; border: none; }
 .directory-card:hover .dir-thumb { opacity: 0.88; }
-.dir-thumb { width: 100%; aspect-ratio: 1; background: #d7dbe1; display: grid; place-items: center; font-size: 3.5rem; }
+.directory-card {
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dir-thumb {
+  height: 150px;
+  flex-shrink: 0;
+}
 .dir-info { padding: 10px 12px 12px; background: white; border: 1px solid var(--line); border-top: none; border-radius: 0 0 var(--radius) var(--radius); }
 .dir-name { font-weight: 700; font-size: 0.95rem; }
 .dir-label { font-size: 0.78rem; color: var(--muted); font-weight: 600; margin-top: 2px; }
@@ -402,4 +410,23 @@ ul { list-style: none; }
   object-fit: cover;
   border-radius: 50%;
   display: block;
+}
+
+.dir-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.15;
+  min-height: 44px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.dir-info {
+  min-height: 116px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dir-add-btn {
+  margin-top: auto;
 }
