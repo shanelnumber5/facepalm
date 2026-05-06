@@ -427,7 +427,7 @@ rick: {
     { icon: '📻', text: 'Consumes commentary that reinforces existing views' },
     { 
       icon: '🎨',
-      text: 'Banner: <a href="https://unsplash.com/photos/semi-truck-on-highway-at-sunset-qP5hJZlF7s8" target="_blank">Unsplash · Highway Truck Scene</a>'
+      text: 'Banner: <a href="https://www.pexels.com/photo/red-and-silver-truck-on-asphalt-road-6574072/" target="_blank">Quintin Gellar · Pexels</a>'
     }
   ],
 
@@ -468,6 +468,69 @@ Not everything is about convenience.`,
   shares: '7 Shares',
 
   friends: ['clark', 'grant']
+},
+evan: {
+  icon: 'images/evan-profile.jpg',
+  portrait: 'images/evan-profile.jpg',
+  imagePosition: 'center top',
+  name: 'Evan "Have You Tried Restarting" Mercer',
+  label: 'Local Systems Fixer',
+  archetype: 'Neutral Good · Human · Level 7 IT Generalist',
+  banner: 'images/evan-banner.jpg',
+
+  tagline: 'It’s probably a simple fix. It rarely is.',
+
+  bio: 'Evan repairs computers locally and is known for being reliable, patient, and quietly overbooked. He spends most of his time troubleshooting other people’s problems while his own environment becomes increasingly chaotic. He has developed an intense interest in karaoke systems, specifically the setup and calibration side, despite having no interest in performing.',
+
+  about: [
+    { icon: '💻', text: 'Repairs computers and handles local IT issues' },
+    { icon: '🧰', text: 'Comfortable with both hardware and software troubleshooting' },
+    { icon: '📍', text: 'Operates locally in <strong>Small Town, MT</strong>' },
+    { icon: '🐕', text: 'Lives with a large number of dogs (not all his)' },
+    { icon: '🎤', text: 'Obsessed with karaoke system setup · does not sing' },
+    { icon: '🔊', text: 'Will optimize audio levels for events he does not attend' },
+    { 
+      icon: '🎨',
+      text: 'Banner: <a href="https://www.pexels.com/photo/a-satellite-dish-on-a-roof-under-a-starry-sky-27347491/" target="_blank">Lucas Andrade · Pexels</a>'
+    }
+  ],
+
+   stats: {
+    'TECHNICAL SKILL': 18,
+    'PATIENCE': 17,
+    'FOCUS': 10,
+    'ENVIRONMENTAL CONTROL': 4,
+    'PROBLEM SOLVING': 19,
+    'PERSONAL BOUNDARIES': 6
+  },
+
+  skills: [
+    { name: 'Troubleshooting', val: '+12', prof: true },
+    { name: 'Hardware Repair', val: '+10', prof: true },
+    { name: 'Audio Calibration', val: '+11', prof: true },
+    { name: 'Explaining Simple Fixes', val: '+9', prof: true },
+    { name: 'Maintaining Order at Home', val: '-6', prof: false },
+    { name: 'Participating in Karaoke', val: '-8', prof: false }
+  ],
+
+  specialAbility: 'Perfect Levels (At Will)',
+
+  passiveNote: 'Passive: Setup Over Performance. Gains satisfaction from preparing systems for optimal use, regardless of whether he participates in the activity.',
+
+  post: `If anyone is setting up karaoke this weekend make sure your input levels are balanced before people start.
+
+Most of the issues I see are from gain being set too high on the mic and not enough separation from the backing track.
+
+I can help get it dialed in if needed.
+
+Also if I don’t respond right away it’s because I am currently trying to keep three laptops running while five dogs are losing their minds at the same time.`,
+
+  postDate: 'Afternoon · Between Jobs',
+  reactions: '9',
+  comments: '6 Comments',
+  shares: '1 Share',
+
+  friends: ['mara', 'derek']
 },
 };
 
