@@ -125,8 +125,8 @@ Just something to think about.`,
 
   postDate: 'March 25',
   reactions: '2',
-  comments: '0 Comments',
-  shares: '0 Shares',
+  comments: '1 Comment',
+  shares: '2 Shares',
 
   friends: ['clark', 'veronica', 'derek']
 },
@@ -271,7 +271,7 @@ Thanks.`,
   postDate: 'Marketplace-adjacent evening',
   reactions: '3',
   comments: '1 Comment',
-  shares: '0 Shares',
+  shares: '3 Shares',
 
   friends: ['veronica', 'grant']
 },
@@ -405,6 +405,69 @@ Some places could use that.`,
   shares: '1 Share',
 
   friends: ['veronica', 'grant', 'mara']
+},
+rick: {
+  icon: 'images/rick-profile.jpg',
+  portrait: 'images/rick-profile.jpg',
+  imagePosition: 'center top',
+  name: 'Rick "Hammer Down" Kincaid',
+  label: 'Single-Issue Signal Amplifier',
+  archetype: 'Lawful Chaotic · Human · Level 10 Independent Operator',
+  banner: 'images/rick-banner.jpg',
+
+  tagline: 'Not everything is about it. Most things are though.',
+
+  bio: 'Rick spends most of his time on the road but treats social media as a broadcast channel for his core beliefs. Nearly any topic can be redirected into a larger point he feels strongly about. Rising costs, long drives, and everyday inconveniences are consistently reframed as acceptable tradeoffs in service of something he considers more important.',
+
+  about: [
+    { icon: '🚛', text: 'Long-haul truck driver · secondary identity to online presence' },
+    { icon: '📢', text: 'Redirects most conversations toward a single central theme' },
+    { icon: '⛽', text: 'Frames higher costs as a necessary and acceptable tradeoff' },
+    { icon: '🧠', text: 'High certainty · low interest in counterpoints' },
+    { icon: '📻', text: 'Consumes commentary that reinforces existing views' },
+    { 
+      icon: '🎨',
+      text: 'Banner: <a href="https://unsplash.com/photos/semi-truck-on-highway-at-sunset-qP5hJZlF7s8" target="_blank">Unsplash · Highway Truck Scene</a>'
+    }
+  ],
+
+  stats: {
+    'CERTAINTY': 20,
+    'TOPIC REDIRECTION': 19,
+    'ENDURANCE': 17,
+    'COST TOLERANCE': 16,
+    'SOURCE VARIETY': 3,
+    'SELF-REFLECTION': 2
+  },
+
+  skills: [
+    { name: 'Conversation Redirect', val: '+12', prof: true },
+    { name: 'Reframing Costs as Sacrifice', val: '+10', prof: true },
+    { name: 'Confident Assertion', val: '+9', prof: true },
+    { name: 'Nuanced Discussion', val: '-6', prof: false },
+    { name: 'Letting Topics Stay Local', val: '-7', prof: false }
+  ],
+
+  specialAbility: 'Central Theme Override (At Will)',
+
+  passiveNote: 'Passive: Topic Gravity. Any discussion has a high chance of being pulled toward Rick’s primary focus within two responses.',
+
+  post: `Fuel prices are up again but honestly I don’t mind paying more if it means things are headed in the right direction.
+
+Some people complain about every little increase but don’t look at the bigger picture.
+
+You have to be willing to put something in if you want to get something out.
+
+I’ve been all over this country and I can tell you there’s a reason some people see it and some people don’t.
+
+Not everything is about convenience.`,
+
+  postDate: 'Highway · Late Afternoon',
+  reactions: '21',
+  comments: '34 Comments',
+  shares: '7 Shares',
+
+  friends: ['clark', 'grant']
 },
 };
 
