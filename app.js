@@ -532,6 +532,132 @@ Also if I don’t respond right away it’s because I am currently trying to kee
 
   friends: ['mara', 'derek']
 },
+walt: {
+  icon: 'images/walt-profile.jpg',
+  portrait: 'images/walt-profile.jpg',
+  imagePosition: 'center top',
+  name: 'Walt "You Can’t Say Anything Anymore" Mercer',
+  label: 'Homestead Humor Broadcaster',
+  archetype: 'Chaotic Good · Human · Level 8 Self-Sufficient Storyteller',
+  banner: 'images/walt-banner.jpg',
+
+  tagline: 'If the joke lands, great. If not, he’ll explain it.',
+
+  bio: 'Walt runs a small homestead outside of Small Town, MT and treats every interaction as a potential setup for a joke. His humor ranges from harmlessly awkward to deeply mistimed, usually delivered with complete confidence. People generally tolerate it because he is helpful, hardworking, and capable of fixing almost anything with baling wire and misplaced optimism.',
+
+  about: [
+    { icon: '🌾', text: 'Runs a small homestead outside <strong>Small Town, MT</strong>' },
+    { icon: '🐔', text: 'Keeps livestock and talks to them like coworkers' },
+    { icon: '🔨', text: 'Can repair nearly anything with improvised materials' },
+    { icon: '😂', text: 'Tells jokes with absolute commitment regardless of audience reaction' },
+    { icon: '🧍', text: 'Frequently misjudges the appropriate tone for a conversation' },
+    { 
+      icon: '🎨',
+      text: 'Banner: <a href="https://unsplash.com/photos/white-and-black-rooster-on-brown-soil-JXXRYrK2kGU" target="_blank">Andre Taissin · Unsplash</a>'
+    }
+  ],
+
+  stats: {
+    'SELF-SUFFICIENCY': 18,
+    'SOCIAL TIMING': 4,
+    'CONFIDENCE': 17,
+    'PRACTICAL KNOWLEDGE': 16,
+    'JOKE FREQUENCY': 20,
+    'AWARENESS OF SILENCE': 2
+  },
+
+  skills: [
+    { name: 'Improvised Repairs', val: '+11', prof: true },
+    { name: 'Commitment to the Bit', val: '+12', prof: true },
+    { name: 'Animal Handling', val: '+9', prof: true },
+    { name: 'Reading the Room', val: '-7', prof: false },
+    { name: 'Ending a Joke Early', val: '-9', prof: false }
+  ],
+
+  specialAbility: 'Double Down (Recharge 5-6)',
+
+  passiveNote: 'Passive: Courtesy Laugh Field. Nearby individuals feel socially obligated to react positively even when confused or uncomfortable.',
+
+  post: `Spent half the morning fixing fencing and the other half trying to figure out which chicken keeps escaping.
+
+At this point I’m starting to think she’s freer range than free range.
+
+Anyway if anyone needs eggs let me know.
+
+They’re fresh and unlike most jokes around here they actually land.`,
+
+  postDate: 'Early Morning · Already Outside',
+  reactions: '15',
+  comments: '18 Comments',
+  shares: '1 Share',
+
+  friends: ['bev', 'evan', 'clark']
+},
+doug: {
+  icon: 'images/doug-profile.jpg',
+  portrait: 'images/doug-profile.jpg',
+  imagePosition: 'center top',
+  name: 'Doug "Federal Employee" Renshaw',
+  label: 'Public Patience Collapse',
+  archetype: 'Lawful Neutral · Human · Level 9 Postal Survivor',
+  banner: 'images/doug-banner.jpg',
+
+  tagline: 'There are procedures for this. None of them helped.',
+
+  bio: 'Doug has worked at the local post office long enough to develop a deep respect for routine and a visible distrust of the general public. Years of small daily incidents have gradually eroded his patience, though he still tries to maintain professionalism. A recent event involving a child, the front lobby, and an area rug appears to have accelerated this process significantly.',
+
+  about: [
+    { icon: '📬', text: 'Works at the post office in <strong>Small Town, MT</strong>' },
+    { icon: '🧾', text: 'Strong belief in forms, procedures, and posted signage' },
+    { icon: '⏰', text: 'Becomes visibly stressed when people ignore instructions' },
+    { icon: '🧼', text: 'Recently developed intense concern about public surfaces' },
+    { icon: '😐', text: 'Attempts professionalism through increasingly thin restraint' },
+    { 
+      icon: '🎨',
+      text: 'Banner: <a href="https://unsplash.com/photos/a-bunch-of-mail-boxes-with-numbers-on-them-9szCcOw4BWo" target="_blank">Elizabeth Kay · Unsplash</a>'
+    }
+  ],
+
+  stats: {
+    'PATIENCE': 5,
+    'PROCEDURAL KNOWLEDGE': 18,
+    'PUBLIC TRUST': 2,
+    'EMOTIONAL RESTRAINT': 7,
+    'ENDURANCE': 16,
+    'VISIBLE EXHAUSTION': 19
+  },
+
+  skills: [
+    { name: 'Deadpan Customer Service', val: '+11', prof: true },
+    { name: 'Passive-Aggressive Sign Creation', val: '+10', prof: true },
+    { name: 'Queue Monitoring', val: '+8', prof: true },
+    { name: 'Maintaining Optimism', val: '-8', prof: false },
+    { name: 'Believing in Humanity', val: '-10', prof: false }
+  ],
+
+  specialAbility: 'Lobby Incident (1/day)',
+
+  passiveNote: 'Passive: Public Exposure. Repeated interaction with preventable situations lowers morale over time while increasing story quality.',
+
+  post: `I would like to remind everyone that the front lobby of the post office is not a restroom.
+
+This sentence should not need to exist.
+
+Additionally, covering a problem with a rug does not resolve the situation and actually creates several new ones.
+
+Whoever raised that child owes me an apology and possibly hazard pay.
+
+We will also be replacing the rug.
+
+Again.`,
+
+  postDate: 'Tuesday · Clearly Had Enough',
+  reactions: '34',
+  comments: '41 Comments',
+  shares: '6 Shares',
+
+  friends: ['walt', 'clark', 'bev']
+},
 };
 
 
