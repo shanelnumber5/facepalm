@@ -658,6 +658,136 @@ Again.`,
 
   friends: ['walt', 'clark', 'bev']
 },
+linda: {
+  icon: 'images/linda-profile.jpg',
+  portrait: 'images/linda-profile.jpg',
+  imagePosition: 'center top',
+  name: 'Linda "One Second Hon" Kincaid',
+  label: 'Overwhelmed Café Keeper',
+  archetype: 'Neutral Good · Human · Level 6 Small Business Survivor',
+  banner: 'images/linda-banner.jpg',
+
+  tagline: 'Trying very hard. Missing several details.',
+
+  bio: 'Linda owns a small coffee shop in Small Town, MT and is generally liked by nearly everyone who visits. Unfortunately, the café operates in a constant state of low-level disorder. Orders are occasionally forgotten, inventory disappears mysteriously, and customers sometimes leave without paying simply because nobody noticed. Linda herself rarely seems upset about this, though people close to her worry she is overwhelmed more often than she admits.',
+
+  about: [
+    { icon: '☕', text: 'Owns and operates a local coffee shop' },
+    { icon: '🧾', text: 'Frequently loses track of transactions and receipts' },
+    { icon: '🌾', text: 'Local farmers often “settle up later” whether she remembers or not' },
+    { icon: '🧠', text: 'Easily distracted during conversations and tasks' },
+    { icon: '😬', text: 'Occasionally gets publicly corrected by her husband online' },
+    { icon: '🍪', text: 'Compensates for operational chaos with genuine kindness' },
+    { 
+      icon: '🎨',
+      text: 'Banner: <a href="https://www.pexels.com/photo/glasses-with-drinks-on-the-table-18023771/" target="_blank">Nam Quân Nguyễn · Pexels</a>'
+    }
+  ],
+
+  stats: {
+    'KINDNESS': 18,
+    'ORGANIZATION': 3,
+    'MULTITASKING': 5,
+    'COMMUNITY GOODWILL': 17,
+    'FINANCIAL AWARENESS': 2,
+    'EMOTIONAL ENDURANCE': 12
+  },
+
+  skills: [
+    { name: 'Remembering Regulars', val: '+10', prof: true },
+    { name: 'De-Escalating Tension', val: '+8', prof: true },
+    { name: 'Making People Comfortable', val: '+11', prof: true },
+    { name: 'Tracking Inventory', val: '-7', prof: false },
+    { name: 'Maintaining Focus', val: '-5', prof: false }
+  ],
+
+  specialAbility: 'House Coffee (Passive)',
+
+  passiveNote: 'Passive: Familiar Atmosphere. Customers remain unusually loyal despite mounting evidence that the business should not function this way.',
+
+  post: `Sorry if anyone got the wrong drink this morning.
+
+We were very busy and I think I accidentally made three caramel lattes that nobody claimed.
+
+If you were missing one please come back by and I’ll remake it.
+
+Also if anyone left a seed catalog and a blue jacket at the shop they are both still here.
+
+I think.`,
+
+  postDate: 'Morning Rush · Probably',
+  reactions: '22',
+  comments: '11 Comments',
+  shares: '1 Share',
+
+  friends: ['rick', 'walt', 'evan']
+},
+brenda: {
+  icon: 'images/brenda-profile.jpg',
+  portrait: 'images/brenda-profile.jpg',
+  imagePosition: 'center top',
+  name: 'Brenda "Dragon Lady" Krill',
+  label: 'Institutional Gatekeeper',
+  archetype: 'Lawful Evil · Human · Level 12 Administrative Enforcer',
+  banner: 'images/brenda-banner.jpg',
+
+  tagline: 'If you needed something, you should have asked earlier.',
+
+  bio: 'Brenda works in the front office at the school and has developed a reputation for being both highly organized and deeply intimidating. She treats administrative control as a personal responsibility and appears to operate through a combination of aggression, momentum, and laminated schedules. In addition to her school duties, she produces a community newsletter during office hours that rarely contains information related to the school itself.',
+
+  about: [
+    { icon: '🏫', text: 'Works in the school office in <strong>Small Town, MT</strong>' },
+    { icon: '📰', text: 'Produces an aggressively local community newsletter' },
+    { icon: '🦶', text: 'Newsletter frequently contains updates about toenail clinics and unrelated events' },
+    { icon: '📣', text: 'Provides unsolicited promotional coverage for local businesses' },
+    { icon: '🏀', text: 'Obsessively manages school sports logistics and scheduling' },
+    { icon: '😡', text: 'Communication style described by staff as “direct” and by students as “terrifying”' },
+    {
+      icon: '🎨',
+      text: 'Banner: <a href="https://unsplash.com/photos/office-table-with-pile-of-papers-6jA6eVsRJ6Q" target="_blank">Wonderlane · Unsplash</a>'
+    }
+  ],
+
+  stats: {
+    'ORGANIZATION': 19,
+    'INTIMIDATION': 20,
+    'COMMUNITY GOSSIP': 16,
+    'EMPATHY': 2,
+    'SCHEDULING CONTROL': 18,
+    'VOLUME': 17
+  },
+
+  skills: [
+    { name: 'Passive-Aggressive Reminder Emails', val: '+12', prof: true },
+    { name: 'Clipboard Authority', val: '+11', prof: true },
+    { name: 'Sports Schedule Enforcement', val: '+10', prof: true },
+    { name: 'Tone Moderation', val: '-8', prof: false },
+    { name: 'Remaining Calm', val: '-6', prof: false }
+  ],
+
+  specialAbility: 'Per My Last Email (Recharge 5-6)',
+
+  passiveNote: 'Passive: Administrative Presence. Nearby individuals instinctively begin apologizing even when unsure they did anything wrong.',
+
+  post: `The newsletter is finished and available in the office.
+
+Please actually read it this time because people continue asking questions that were already answered in bold.
+
+Also:
+- Toenail clinic is Thursday
+- Youth basketball forms are overdue
+- Whoever keeps taking the good pens needs to stop
+- Support local businesses instead of complaining there is “nothing in town”
+
+Thank you.`,
+
+  postDate: '6:12 AM · Already Angry',
+  reactions: '19',
+  comments: '27 Comments',
+  shares: '4 Shares',
+
+  friends: ['clark', 'bev', 'doug']
+},
 };
 
 
