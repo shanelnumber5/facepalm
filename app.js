@@ -661,7 +661,7 @@ Again.`,
 linda: {
   icon: 'images/linda-profile.jpg',
   portrait: 'images/linda-profile.jpg',
-  imagePosition: 'center top',
+  imagePosition: 'center',
   name: 'Linda "One Second Hon" Kincaid',
   label: 'Overwhelmed Café Keeper',
   archetype: 'Neutral Good · Human · Level 6 Small Business Survivor',
@@ -787,6 +787,256 @@ Thank you.`,
   shares: '4 Shares',
 
   friends: ['clark', 'bev', 'doug']
+},
+calvin: {
+  icon: 'images/calvin-profile.jpg',
+  portrait: 'images/calvin-profile.jpg',
+  imagePosition: 'center top',
+  name: 'Calvin "Just Trying to Help" Yoder',
+  label: 'Over-Involved Tradesman',
+  archetype: 'Neutral Good · Human · Level 9 Community Fixer',
+  banner: 'images/calvin-banner.jpg',
+
+  tagline: 'Helpful advice arrives whether requested or not.',
+
+  bio: 'Calvin is a local plumber with a reputation for being hardworking, capable, and impossible to avoid once he starts offering suggestions. After leaving a more insulated upbringing behind years ago, he became intensely invested in community life and now inserts himself into nearly every local issue. His attempts to help are sincere, though his delivery often creates more friction than resolution.',
+
+  about: [
+    { icon: '🔧', text: 'Works as a plumber throughout <strong>Small Town, MT</strong>' },
+    { icon: '🛠️', text: 'Cannot witness a problem without proposing three solutions' },
+    { icon: '🗣️', text: 'Offers advice with the confidence of a town council member' },
+    { icon: '🥧', text: 'Frequently reminds people about his wife’s baking' },
+    { icon: '😬', text: 'Has unintentionally accumulated several long-term grudges' },
+    { icon: '🚪', text: 'Known for conversations that become impossible to exit cleanly' },
+    {
+      icon: '🎨',
+      text: 'Banner: <a href="https://unsplash.com/photos/white-metal-pipe-on-brown-brick-wall-PFMz8RkPn8E" target="_blank">Brett Jordan · Unsplash</a>'
+    }
+  ],
+
+  stats: {
+    'HELPFULNESS': 18,
+    'SELF-AWARENESS': 4,
+    'PERSISTENCE': 17,
+    'COMMUNITY INVOLVEMENT': 19,
+    'BOUNDARY RECOGNITION': 3,
+    'POTLUCK ENTHUSIASM': 16
+  },
+
+  skills: [
+    { name: 'Emergency Repairs', val: '+11', prof: true },
+    { name: 'Extended Explanations', val: '+10', prof: true },
+    { name: 'Showing Up Unprompted', val: '+9', prof: true },
+    { name: 'Recognizing Social Cues', val: '-7', prof: false },
+    { name: 'Ending Conversations Quickly', val: '-8', prof: false }
+  ],
+
+  specialAbility: 'Actually Pretty Useful (Passive)',
+
+  passiveNote: 'Passive: Reluctant Dependability. Despite interpersonal fatigue, townspeople continue calling Calvin because he reliably solves problems and usually arrives quickly.',
+
+  post: `If anyone is having issues with frozen pipes this week let me know before things get worse.
+
+Most problems can be prevented if people would stop ignoring small leaks until they become large leaks.
+
+Also Ruth made cinnamon rolls again and I’m telling you right now there are not many people baking like that anymore.
+
+Anyway stay warm and check your crawl spaces.`,
+
+  postDate: 'Early Morning · Already Working',
+  reactions: '23',
+  comments: '14 Comments',
+  shares: '2 Shares',
+
+  friends: ['walt', 'linda', 'doug']
+},
+ruth: {
+  icon: 'images/ruth-profile.jpg',
+  portrait: 'images/ruth-profile.jpg',
+  imagePosition: 'center top',
+  name: 'Ruth "Fresh Out of the Oven" Yoder',
+  label: 'Aspirational Cottage Entrepreneur',
+  archetype: 'Neutral Good · Human · Level 6 Community Baker',
+  banner: 'images/ruth-banner.jpg',
+
+  tagline: 'Support small business. Supplies and motivation limited.',
+
+  bio: 'Ruth is attempting to launch a small baking business from home while balancing family life, inconsistent energy, and a strong preference for baking only when inspiration strikes. Her baked goods are genuinely excellent, though availability is unpredictable and often depends on whether her children requested something first. After a recent injury, community fundraising efforts intensified conversations around healthcare, self-reliance, and whether anyone actually knows how insurance works.',
+
+  about: [
+    { icon: '🥧', text: 'Produces highly regarded homemade baked goods' },
+    { icon: '🏡', text: 'Runs an informal home baking operation in <strong>Small Town, MT</strong>' },
+    { icon: '🧁', text: 'Most baking projects eventually become “for the kids”' },
+    { icon: '📅', text: 'Business hours best described as spiritually flexible' },
+    { icon: '🩺', text: 'Recently relied on community donations after breaking an arm' },
+    { icon: '🤝', text: 'Receives strong support from locals despite inconsistent output' },
+    {
+      icon: '🎨',
+      text: 'Banner: <a href="https://unsplash.com/photos/brown-cupcake-on-brown-wooden-table-Tx0kraTQJlA" target="_blank">David Todd McCarty · Unsplash</a>'
+    }
+  ],
+
+  stats: {
+    'BAKING SKILL': 19,
+    'CONSISTENCY': 4,
+    'COMMUNITY GOODWILL': 18,
+    'BUSINESS STRUCTURE': 3,
+    'COMFORT FOOD AURA': 20,
+    'FOLLOW-THROUGH': 5
+  },
+
+  skills: [
+    { name: 'Cinnamon Rolls', val: '+12', prof: true },
+    { name: 'Community Fundraising Momentum', val: '+9', prof: true },
+    { name: 'Making People Feel Guilty Politely', val: '+8', prof: true },
+    { name: 'Maintaining Regular Hours', val: '-7', prof: false },
+    { name: 'Separating Business From Family Snacks', val: '-6', prof: false }
+  ],
+
+  specialAbility: 'Just Took Them Out (Recharge 5-6)',
+
+  passiveNote: 'Passive: Fresh Bread Effect. Nearby individuals become significantly more patient, supportive, and financially generous in the presence of homemade baked goods.',
+
+  post: `Thank you everyone again for the prayers, donations, meals, and support after my arm injury.
+
+We are so blessed to live in such a caring community.
+
+I am hoping to slowly start baking again soon once things settle down a little here at home.
+
+The kids requested cinnamon rolls today so I may have accidentally used most of the ingredients already.
+
+I’ll keep everyone posted ❤️`,
+
+  postDate: 'Afternoon · Recovering Slowly',
+  reactions: '47',
+  comments: '31 Comments',
+  shares: '3 Shares',
+
+  friends: ['calvin', 'linda', 'bev']
+}, 
+wayne: {
+  icon: 'images/wayne-profile.jpg',
+  portrait: 'images/wayne-profile.jpg',
+  imagePosition: 'center',
+  name: 'Wayne "That’s Right, Bev" Tolliver',
+  label: 'Publicly Uncomplicated Companion',
+  archetype: 'Lawful Neutral · Human · Level 7 Agreement Specialist',
+  banner: 'images/wayne-banner.jpg',
+
+  tagline: 'Not hiding. Not explaining either.',
+
+  bio: 'Wayne is widely known around Small Town, MT for his long-term relationship with Bev Tanglewood despite the fact that Bev remains married to Harold Tanglewood. The arrangement is treated with a level of public acknowledgment that somehow makes everyone more uncomfortable, not less. Wayne himself rarely elaborates on any of it and instead focuses most conversations on community decline, traditional values, and agreeing with whatever Bev said immediately beforehand.',
+
+  about: [
+    { icon: '🧢', text: 'Regularly accompanies Bev to community events and sales' },
+    { icon: '👍', text: 'Publicly agrees with Bev at nearly every opportunity' },
+    { icon: '📣', text: 'Frequently comments on “how things used to be”' },
+    { icon: '🪑', text: 'Can often be found sitting silently near seasonal décor displays' },
+    { icon: '😐', text: 'Treats socially complicated situations as completely ordinary' },
+    { icon: '📰', text: 'Occasionally contributes opinions to Bev’s unofficial business ideas' },
+    {
+      icon: '🎨',
+      text: 'Banner: <a href="https://www.pexels.com/photo/road-in-small-town-in-countryside-13777907/" target="_blank">Tom Fisk · Pexels</a>'
+    }
+  ],
+
+  stats: {
+    'AGREEMENT': 20,
+    'SELF-ASSERTION': 2,
+    'SOCIAL COMFORT': 5,
+    'TRADITIONALISM': 17,
+    'PUBLIC COMPOSURE': 16,
+    'CONFLICT AVOIDANCE': 18
+  },
+
+  skills: [
+    { name: 'Supportive Nodding', val: '+12', prof: true },
+    { name: 'Reinforcing Opinions', val: '+10', prof: true },
+    { name: 'Remaining Calm During Tension', val: '+9', prof: true },
+    { name: 'Clarifying Relationships', val: '-10', prof: false },
+    { name: 'Independent Thought in Public', val: '-6', prof: false }
+  ],
+
+  specialAbility: 'Back Me Up Here (Passive)',
+
+  passiveNote: 'Passive: Social Persistence. Repeated exposure gradually causes nearby individuals to stop questioning the situation out of emotional exhaustion.',
+
+  post: `Bev is absolutely right about local businesses needing more support.
+
+People complain there’s “nothing in town” but then refuse to shop local when someone is actually trying to build something meaningful.
+
+Different generation I guess.
+
+Anyway we’ll be at the craft fair Saturday if anyone wants to stop by and say hello.`,
+
+  postDate: 'Evening · Shared Account Energy',
+  reactions: '13',
+  comments: '22 Comments',
+  shares: '1 Share',
+
+  friends: ['bev', 'brenda', 'grant']
+},
+carol: {
+  icon: 'images/carol-profile.jpg',
+  portrait: 'images/carol-profile.jpg',
+  imagePosition: 'center',
+  name: 'Carol "Just Staying Positive" Hendricks',
+  label: 'Conflict-Avoidant Grandparent',
+  archetype: 'Neutral Neutral · Human · Level 8 Community Balancer',
+  banner: 'images/carol-banner.jpg',
+
+  tagline: 'There are good people on both sides. Especially if they support literacy.',
+
+  bio: 'Carol is one of the few people in Small Town, MT capable of maintaining friendly relationships across nearly every social group. She accomplishes this primarily by refusing to commit strongly to anything beyond basic politeness and the academic success of her granddaughter. Nearly every conversation eventually circles back to school performance, reading levels, enrichment activities, or future scholarship opportunities.',
+
+  about: [
+    { icon: '🎓', text: 'Deeply invested in her granddaughter’s education and future' },
+    { icon: '📚', text: 'Treats elementary academic milestones like Olympic achievements' },
+    { icon: '😊', text: 'Maintains exhausting levels of social neutrality' },
+    { icon: '☕', text: 'Can sit through opposing political conversations without reacting' },
+    { icon: '🧩', text: 'Frequently recommends educational activities regardless of context' },
+    { icon: '🏫', text: 'Views the school primarily as an extension of her granddaughter’s development' },
+    {
+      icon: '🎨',
+      text: 'Banner: <a href="https://www.pexels.com/photo/woman-holding-baby-near-window-1109238/" target="_blank">Juan Pablo Serrano · Pexels</a>'
+    }
+  ],
+
+  stats: {
+    'SOCIAL SURVIVAL': 19,
+    'CONFLICT AVOIDANCE': 20,
+    'GRANDPARENT ENERGY': 18,
+    'POLITICAL COMMITMENT': 3,
+    'ACADEMIC ENTHUSIASM': 19,
+    'BOUNDARY REDIRECTION': 16
+  },
+
+  skills: [
+    { name: 'Neutral Response Generation', val: '+12', prof: true },
+    { name: 'Conversation Deflection', val: '+10', prof: true },
+    { name: 'Educational Resource Sharing', val: '+11', prof: true },
+    { name: 'Taking a Firm Position', val: '-8', prof: false },
+    { name: 'Ending Discussions Naturally', val: '-5', prof: false }
+  ],
+
+  specialAbility: 'Speaking of Education... (At Will)',
+
+  passiveNote: 'Passive: Granddaughter Priority. Any topic can be redirected toward educational achievement, academic planning, or child enrichment within three conversational turns.',
+
+  post: `I know everyone has strong feelings right now but I think it’s important we all remember we are neighbors first.
+
+Anyway Sophie got another perfect spelling test this week and has moved up two reading groups.
+
+I’m just so proud of how hard she works.
+
+Does anyone know of any good summer STEM programs nearby?`,
+
+  postDate: 'Evening · Keeping Things Civil',
+  reactions: '31',
+  comments: '17 Comments',
+  shares: '1 Share',
+
+  friends: ['linda', 'calvin', 'doug', 'rick']
 },
 };
 
