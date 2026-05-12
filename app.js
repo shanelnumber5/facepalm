@@ -725,7 +725,8 @@ I think.`,
 brenda: {
   icon: 'images/brenda-profile.jpg',
   portrait: 'images/brenda-profile.jpg',
-  imagePosition: 'center top',
+  imageFit: '110%',
+  imagePosition: 'center',
   name: 'Brenda "Dragon Lady" Krill',
   label: 'Institutional Gatekeeper',
   archetype: 'Lawful Evil · Human · Level 12 Administrative Enforcer',
@@ -917,7 +918,8 @@ I’ll keep everyone posted ❤️`,
 wayne: {
   icon: 'images/wayne-profile.jpg',
   portrait: 'images/wayne-profile.jpg',
-  imagePosition: 'center',
+  imageFit: 'contain',
+  imagePosition: 'center bottom',
   name: 'Wayne "That’s Right, Bev" Tolliver',
   label: 'Publicly Uncomplicated Companion',
   archetype: 'Lawful Neutral · Human · Level 7 Agreement Specialist',
@@ -1038,6 +1040,133 @@ Does anyone know of any good summer STEM programs nearby?`,
 
   friends: ['linda', 'calvin', 'doug', 'rick']
 },
+gary: {
+  icon: 'images/gary-profile.jpg',
+  portrait: 'images/gary-profile.jpg',
+  imageFit: 'contain',
+  imagePosition: 'center',
+  name: 'Gary "Back in Our Day" Bellamy',
+  label: 'Nostalgia Loop Enthusiast',
+  archetype: 'Chaotic Neutral · Human · Level 8 Aging Charmer',
+  banner: 'images/gary-banner.jpg',
+
+  tagline: 'Things were simpler then. He mentions this constantly.',
+
+  bio: 'Gary spends most of his online time reminiscing about earlier decades, usually with heavy emphasis on how people used to behave, dress, or “carry themselves.” His attempts at friendliness often become uncomfortable due to poor boundaries, especially around younger adults who clearly do not enjoy the interaction as much as he believes they do. Despite this, Gary continues operating with complete confidence and very little self-awareness.',
+
+  about: [
+    { icon: '📼', text: 'Deeply nostalgic for the 70s, 80s, and selective parts of the 90s' },
+    { icon: '🎵', text: 'Frequently posts old music clips and “they don’t make them like this anymore” comments' },
+    { icon: '😬', text: 'Attempts at charm often make conversations uncomfortable' },
+    { icon: '🕶️', text: 'Believes his social instincts are stronger than they actually are' },
+    { icon: '📸', text: 'Comments on profile pictures with unnecessary familiarity' },
+    { icon: '🚗', text: 'Treats nostalgia as both personality and moral framework' },
+    {
+      icon: '🎨',
+      text: 'Banner: <a href="https://www.safetyandhealthmagazine.com/25377-is-it-safe-to-drink-from-the-hose/" target="_blank">Yamada Taro · Ghetty Images</a>'
+    }
+  ],
+
+  stats: {
+    'NOSTALGIA': 20,
+    'SELF-AWARENESS': 2,
+    'CONFIDENCE': 16,
+    'SOCIAL FILTERING': 3,
+    'OLD STORY REPETITION': 18,
+    'BOUNDARY RECOGNITION': 4
+  },
+
+  skills: [
+    { name: 'Unprompted Storytelling', val: '+11', prof: true },
+    { name: 'Selective Memory', val: '+10', prof: true },
+    { name: 'Turning Any Topic Into the Past', val: '+9', prof: true },
+    { name: 'Reading Discomfort', val: '-8', prof: false },
+    { name: 'Knowing When to Stop Talking', val: '-7', prof: false }
+  ],
+
+  specialAbility: 'Different Times (Passive)',
+
+  passiveNote: 'Passive: Nostalgia Field. Nearby conversations gradually shift toward stories, comparisons, and increasingly inaccurate memories of how things supposedly used to be.',
+
+  post: `Kids today will never understand how good things used to be.
+
+People actually talked to each other face to face and knew how to have fun without staring at screens all day.
+
+Not saying everything was perfect but there was definitely more respect and people carried themselves differently.
+
+Some of these younger generations could learn a thing or two from the old days.`,
+
+  postDate: 'Late Night · Listening to Classic Rock',
+  reactions: '14',
+  comments: '33 Comments',
+  shares: '2 Shares',
+
+  friends: ['rick', 'wayne', 'walt']
+},
+harlan: {
+  icon: 'images/harlan-profile.jpg',
+  portrait: 'images/harlan-profile.jpg',
+  imagePosition: 'center top',
+  name: 'Harlan "Back When Discipline Meant Something" Pike',
+  label: 'Neighborhood Velocity Monitor',
+  archetype: 'Lawful Neutral · Human · Level 10 Standards Preservationist',
+  banner: 'images/harlan-banner.jpg',
+
+  tagline: 'Someone has to say something.',
+
+  bio: 'Harlan strongly believes that modern society suffers from a lack of accountability, structure, and consequences. He monitors local behavior closely and treats small violations as indicators of broader cultural decline. Though generally polite in public, he regularly contacts schools, businesses, and town offices to report incidents he feels are being ignored by everyone else.',
+
+  about: [
+    { icon: '🚗', text: 'Deeply concerned about vehicle speed within town limits' },
+    { icon: '📞', text: 'Frequently contacts institutions directly to report concerns' },
+    { icon: '🏫', text: 'Believes schools should enforce stronger discipline standards' },
+    { icon: '🧠', text: 'Views minor rule-breaking as evidence of societal decline' },
+    { icon: '👀', text: 'Pays extremely close attention to neighborhood activity' },
+    { icon: '📏', text: 'Strong personal attachment to order, procedure, and consequences' },
+    {
+      icon: '🎨',
+      text: 'Banner: <a href="https://www.pexels.com/photo/vintage-hollis-country-store-with-gas-pumps-32226673/" target="_blank">John Robertson · Pexels</a>'
+    }
+  ],
+
+  stats: {
+    'VIGILANCE': 19,
+    'TOLERANCE': 3,
+    'PHONE CALL INITIATION': 18,
+    'RULE ENFORCEMENT': 17,
+    'PERSPECTIVE': 4,
+    'MORAL CERTAINTY': 20
+  },
+
+  skills: [
+    { name: 'Immediate Complaint Reporting', val: '+12', prof: true },
+    { name: 'Neighborhood Observation', val: '+10', prof: true },
+    { name: 'Escalating Minor Incidents', val: '+9', prof: true },
+    { name: 'Letting Things Go', val: '-9', prof: false },
+    { name: 'Distinguishing Intent From Accident', val: '-6', prof: false }
+  ],
+
+  specialAbility: 'I Called About This Already (Recharge 4-6)',
+
+  passiveNote: 'Passive: Standards Decline Detection. Minor inconveniences are automatically interpreted as evidence of worsening generational behavior.',
+
+  post: `To the parents of the student driving the dark pickup near the school this morning:
+
+Five miles over the speed limit is still speeding.
+
+I already contacted the school because somebody clearly needs to start paying attention before someone gets hurt.
+
+Kids today seem to think rules are optional and honestly that attitude starts at home.
+
+Back when we were growing up there were consequences for this kind of behavior.`,
+
+  postDate: '9:14 AM · Watching Traffic',
+  reactions: '12',
+  comments: '39 Comments',
+  shares: '2 Shares',
+
+  friends: ['doug', 'brenda', 'rick']
+},
 };
 
 
@@ -1045,9 +1174,11 @@ function avatarMarkup(profile, className = '') {
   const pos = profile.imagePosition || 'center top';
   const isImage = profile.icon && profile.icon.includes('images/');
 
+  const fit = profile.imageFit || 'cover';
+
   const imgStyle = className === 'dir-thumb' || className === 'about-portrait'
-    ? `style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:${pos};display:block;"`
-    : `style="object-position:${pos}"`;
+    ? `style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:${fit};object-position:${pos};display:block;"`
+    : `style="object-fit:${fit};object-position:${pos}"`;
 
   const content = isImage
     ? `<img src="${profile.icon}" alt="${profile.name}" ${imgStyle}>`
@@ -1105,7 +1236,11 @@ function renderHomeGrid() {
 }
 
 function renderFriendsDir() {
-  document.getElementById('friendsDirectory').innerHTML = Object.entries(profiles).map(([id, p]) => `
+  const shuffled = Object.entries(profiles)
+    .slice()
+    .sort(() => Math.random() - 0.5);
+
+  document.getElementById('friendsDirectory').innerHTML = shuffled.map(([id, p]) => `
     <div class="directory-card" role="button" tabindex="0"
          onclick="nav('profile','${id}')"
          onkeydown="if(event.key==='Enter'||event.key===' ')nav('profile','${id}')">
