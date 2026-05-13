@@ -918,7 +918,7 @@ I’ll keep everyone posted ❤️`,
 wayne: {
   icon: 'images/wayne-profile.jpg',
   portrait: 'images/wayne-profile.jpg',
-  imageFit: 'contain',
+  imageFit: '60% top',
   imagePosition: 'center bottom',
   name: 'Wayne "That’s Right, Bev" Tolliver',
   label: 'Publicly Uncomplicated Companion',
@@ -1043,7 +1043,7 @@ Does anyone know of any good summer STEM programs nearby?`,
 gary: {
   icon: 'images/gary-profile.jpg',
   portrait: 'images/gary-profile.jpg',
-  imageFit: 'contain',
+  imageFit: '60%',
   imagePosition: 'center',
   name: 'Gary "Back in Our Day" Bellamy',
   label: 'Nostalgia Loop Enthusiast',
@@ -1166,6 +1166,451 @@ Back when we were growing up there were consequences for this kind of behavior.`
   shares: '2 Shares',
 
   friends: ['doug', 'brenda', 'rick']
+},
+keith: {
+  icon: 'images/keith-profile.jpg',
+  portrait: 'images/keith-profile.jpg',
+  imagePosition: 'center top',
+  imageFit: 'cover',
+  name: 'Keith "I Don’t Trust People" Maddox',
+  label: 'Protective Territorialist',
+  archetype: 'Lawful Neutral · Human · Level 9 Suspicious Spouse',
+  banner: 'images/keith-banner.jpg',
+
+  tagline: 'People have different intentions than they let on.',
+
+  bio: 'Keith is a former Marine who approaches relationships, friendships, and public interaction with intense caution and territorial instinct. He views most outside social influence as potentially disrespectful or manipulative and believes loyalty should naturally limit outside relationships. While he frames his behavior as protective and respectful, people around him often find the dynamic uncomfortable, especially given that both he and his wife are fully grown adults with decades of life experience.',
+
+  about: [
+    { icon: '🪖', text: 'Former Marine with strong opinions about discipline and loyalty' },
+    { icon: '👀', text: 'Deeply suspicious of other people’s motives' },
+    { icon: '📱', text: 'Monitors social interactions more closely than necessary' },
+    { icon: '💍', text: 'Views marriage as complete social alignment' },
+    { icon: '😐', text: 'Does not understand why others find this concerning' },
+    { icon: '🎸', text: 'Still references Gen X independence while behaving extremely possessively' },
+    {
+      icon: '🎨',
+      text: 'Banner: <a href="https://www.pexels.com/photo/tractor-working-in-potato-field-2252576/" target="_blank">Mark Stebnicki · Pexels</a>'
+    }
+  ],
+
+  stats: {
+    'VIGILANCE': 18,
+    'TRUST': 3,
+    'LOYALTY': 19,
+    'SELF-AWARENESS': 4,
+    'INTENSITY': 17,
+    'EMOTIONAL FLEXIBILITY': 2
+  },
+
+  skills: [
+    { name: 'Protective Framing', val: '+11', prof: true },
+    { name: 'Reading Threat Into Neutral Situations', val: '+10', prof: true },
+    { name: 'Social Monitoring', val: '+9', prof: true },
+    { name: 'Relaxing', val: '-8', prof: false },
+    { name: 'Understanding Independence', val: '-7', prof: false }
+  ],
+
+  specialAbility: 'Who’s That? (Recharge 4-6)',
+
+  passiveNote: 'Passive: Territorial Awareness. Neutral interactions involving his spouse are automatically flagged internally as suspicious until proven otherwise.',
+
+  post: `Maybe this is just how I was raised but I don’t really understand why married people need constant attention from random outsiders online.
+
+Seems like a lot of people today forgot what commitment actually means.
+
+If you really love somebody you should want to spend your time with them instead of needing validation from everyone else.
+
+Just my opinion.`,
+
+  postDate: 'Late Evening · Watching Comments Closely',
+  reactions: '16',
+  comments: '28 Comments',
+  shares: '3 Shares',
+
+  friends: ['rick', 'gary', 'wayne']
+},
+terry: {
+  icon: 'images/terry-profile.jpg',
+  portrait: 'images/terry-profile.jpg',
+  imagePosition: 'center top',
+  imageFit: 'cover',
+  name: 'Terry "Authorized Use Only" Barlow',
+  label: 'Waste Management Sentinel',
+  archetype: 'Lawful Neutral · Human · Level 11 Dump Guardian',
+  banner: 'images/terry-banner.jpg',
+
+  tagline: 'Somebody has to maintain standards.',
+
+  bio: 'Terry has developed a deep personal attachment to the town dump and behaves as though he has been unofficially appointed its sole protector. He closely monitors usage, documents suspicious activity, and frequently posts online warnings about unauthorized dumping. His sense of territorial ownership has expanded over time to include opinions about who should be allowed access, what items belong there, and how long people should reasonably remain on site.',
+
+  about: [
+    { icon: '🗑️', text: 'Treats the town dump as a protected civic resource' },
+    { icon: '📷', text: 'Installed multiple cameras to monitor activity at the site' },
+    { icon: '🚨', text: 'Posts pictures of unfamiliar visitors online for “community awareness”' },
+    { icon: '📦', text: 'Strong opinions about acceptable dumping categories' },
+    { icon: '🚛', text: 'Suspicious of trailers, mattresses, and out-of-town license plates' },
+    { icon: '🧠', text: 'Believes vigilance prevents total societal collapse' },
+    {
+      icon: '🎨',
+      text: 'Banner: <a href="https://www.pexels.com/photo/rusty-blue-industrial-container-against-metal-wall-33842119/" target="_blank">Jan van der Wolf · Pexels</a>'
+    }
+  ],
+
+  stats: {
+    'VIGILANCE': 20,
+    'TERRITORIALITY': 19,
+    'PUBLIC TRUST': 5,
+    'CAMERA OWNERSHIP': 18,
+    'RULE INTERPRETATION': 17,
+    'ABILITY TO MIND HIS OWN BUSINESS': 2
+  },
+
+  skills: [
+    { name: 'Suspicious Vehicle Detection', val: '+12', prof: true },
+    { name: 'Public Warning Posts', val: '+10', prof: true },
+    { name: 'Trash Classification', val: '+11', prof: true },
+    { name: 'Assuming Innocent Intent', val: '-8', prof: false },
+    { name: 'Letting People Throw Things Away Normally', val: '-7', prof: false }
+  ],
+
+  specialAbility: 'Caught on Camera (Recharge 5-6)',
+
+  passiveNote: 'Passive: Territorial Surveillance. Unknown individuals entering monitored areas are automatically perceived as potential violators until proven otherwise.',
+
+  post: `To the individual with the silver pickup and utility trailer at the dump this afternoon:
+
+I have your vehicle on camera.
+
+This facility is for residents only and not for commercial dumping or whatever it was you were trying to pull.
+
+Also whoever left paint cans in the metal section needs to educate themselves before creating problems for everyone else.
+
+People seem to think rules are optional until the site gets shut down.`,
+
+  postDate: 'Afternoon · Monitoring Activity',
+  reactions: '18',
+  comments: '46 Comments',
+  shares: '4 Shares',
+
+  friends: ['harlan', 'doug', 'rick']
+},
+sherri: {
+  icon: 'images/sherri-profile.jpg',
+  portrait: 'images/sherri-profile.jpg',
+  imagePosition: 'center top',
+  imageFit: 'cover',
+  name: 'Sherri "Don’t Judge Me" Lattimer',
+  label: 'Perpetual Crisis Generator',
+  archetype: 'Chaotic Neutral · Human · Level 10 Overwhelmed Parent',
+  banner: 'images/sherri-banner.jpg',
+
+  tagline: 'People don’t know the full story.',
+
+  bio: 'Sherri lives in a constant state of emotional overload and unfinished situations. Most responsibilities are handled only after becoming unavoidable, usually following calls from the school or complaints from neighbors. She carries around a highly realistic baby doll that she treats with intense seriousness while maintaining a house full of small dogs that everyone quietly pretends not to count too carefully.',
+
+  about: [
+    { icon: '📞', text: 'Usually responds to problems after the school calls repeatedly' },
+    { icon: '🍼', text: 'Carries a realistic baby doll everywhere and treats it like a real infant' },
+    { icon: '🐕', text: 'Owns an unclear but concerning number of small dogs' },
+    { icon: '😤', text: 'Feels constantly attacked and misunderstood' },
+    { icon: '🏠', text: 'Home environment described by others as “a lot”' },
+    { icon: '🚨', text: 'Minor issues regularly escalate into major situations' },
+    {
+      icon: '🎨',
+      text: 'Banner: <a href="https://www.pexels.com/photo/adorable-puppy-inside-the-box-7749996/" target="_blank">Hue Chi · Pexels</a>'
+    }
+  ],
+
+  stats: {
+    'CHAOS ENERGY': 20,
+    'FOLLOW-THROUGH': 2,
+    'DEFENSIVENESS': 18,
+    'ORGANIZATION': 3,
+    'SELF-AWARENESS': 2,
+    'CRISIS RECOVERY': 12
+  },
+
+  skills: [
+    { name: 'Excuse Generation', val: '+11', prof: true },
+    { name: 'Ignoring Problems Temporarily', val: '+10', prof: true },
+    { name: 'Emotional Posting', val: '+9', prof: true },
+    { name: 'Long-Term Planning', val: '-8', prof: false },
+    { name: 'Accepting Responsibility', val: '-9', prof: false }
+  ],
+
+  specialAbility: 'Everybody’s Against Me (Recharge 5-6)',
+
+  passiveNote: 'Passive: Escalation Spiral. Outside criticism immediately increases emotional posting activity and reduces productive decision-making.',
+
+  post: `Really tired of people talking about me like they know everything.
+
+Some of us are trying our best and thats more than I can say for other people around here.
+
+Maybe worry about your own house.
+
+Anyway if anyone sees a little pink baby blanket around town message me because I cant find it anywhere and I KNOW I had it earlier.`,
+
+  postDate: '12:42 AM · Rough Night',
+  reactions: '19',
+  comments: '48 Comments',
+  shares: '2 Shares',
+
+  friends: ['gary', 'bev', 'rick']
+},
+pam: {
+  icon: 'images/pam-profile.jpg',
+  portrait: 'images/pam-profile.jpg',
+  imagePosition: 'center top',
+  imageFit: 'cover',
+  name: 'Pam "I Might Need That" Lattimer',
+  label: 'Generational Chaos Stabilizer',
+  archetype: 'Lawful Chaotic · Human · Level 11 Emergency Grandparent',
+  banner: 'images/pam-banner.jpg',
+
+  tagline: 'Don’t throw that away. There’s still good parts on it.',
+
+  bio: 'Pam spends much of her time managing crises created by other family members while simultaneously maintaining several large-scale crises of her own. She frequently steps in to discipline or supervise Sherri’s children due to inconsistent parenting at home. Over the years, Pam has accumulated a vast and poorly documented collection of belongings distributed between sheds, storage piles, spare rooms, and multiple parked vehicles that no longer reliably operate.',
+
+  about: [
+    { icon: '🚚', text: 'Uses parked trucks as long-term storage solutions' },
+    { icon: '📦', text: 'Strong emotional attachment to objects with “possible future use”' },
+    { icon: '🐕', text: 'Also quietly involved in small dog breeding operations' },
+    { icon: '👵', text: 'Often acts as the primary disciplinarian for her grandchildren' },
+    { icon: '🧹', text: 'Attempts organization through increasingly complex pile systems' },
+    { icon: '😤', text: 'Believes modern parenting lacks structure and accountability' },
+    {
+      icon: '🎨',
+      text: 'Banner: <a href="https://www.pexels.com/photo/plants-and-bags-in-garage-15828484/" target="_blank">Jimmy Liao · Pexels</a>'
+    }
+  ],
+
+  stats: {
+    'RESOURCE RETENTION': 20,
+    'DISCIPLINE': 16,
+    'ORGANIZATION': 4,
+    'ENDURANCE': 18,
+    'HOARD DENSITY': 19,
+    'EMOTIONAL PROCESSING': 5
+  },
+
+  skills: [
+    { name: 'Finding Lost Items Eventually', val: '+11', prof: true },
+    { name: 'Grandchild Management', val: '+10', prof: true },
+    { name: 'Improvised Storage Solutions', val: '+12', prof: true },
+    { name: 'Throwing Things Away', val: '-10', prof: false },
+    { name: 'Recognizing Capacity Limits', val: '-7', prof: false }
+  ],
+
+  specialAbility: 'There’s One Out Back (Recharge 5-6)',
+
+  passiveNote: 'Passive: Hidden Inventory. Nearly any requested object has a moderate chance of existing somewhere on the property beneath unrelated materials.',
+
+  post: `If one more person tells me I need to clean up around here they can come do it themselves.
+
+Half the stuff people throw away nowadays still works fine with a little effort.
+
+Also whoever moved the blue tarp pile behind the old Chevy needs to put it back because now I cant find anything.
+
+And if you hear little barking over here mind your own business because not everything needs to involve town gossip.`,
+
+  postDate: 'Morning · Looking For Something',
+  reactions: '22',
+  comments: '31 Comments',
+  shares: '1 Share',
+
+  friends: ['sherri', 'calvin', 'walt']
+},
+trina: {
+  icon: 'images/trina-profile.jpg',
+  portrait: 'images/trina-profile.jpg',
+  imagePosition: 'center',
+  imageFit: 'cover',
+  name: 'Trina "Hot Trina" Vale',
+  label: 'Perpetual Reform Candidate',
+  archetype: 'Chaotic Neutral · Human · Level 9 Civic Disruptor',
+  banner: 'images/trina-banner.jpg',
+
+  tagline: 'This town is not ready for my ideas.',
+
+  bio: 'Trina runs for local leadership positions with remarkable frequency and unwavering confidence. Her campaigns are built around vague promises of major reform, government transparency, and “finally shaking things up,” though details are usually limited or contradictory. She is known for speaking with absolute certainty regardless of subject matter and reacting aggressively to criticism, fact-checking, or requests for clarification.',
+
+  about: [
+    { icon: '🗳️', text: 'Regularly campaigns for local leadership roles' },
+    { icon: '📣', text: 'Promises sweeping change with minimal logistical detail' },
+    { icon: '🔥', text: 'Nickname began ironically and is now universally accepted' },
+    { icon: '😤', text: 'Treats disagreement as evidence of corruption or jealousy' },
+    { icon: '🧠', text: 'High confidence · extremely inconsistent reasoning' },
+    { icon: '📱', text: 'Frequently posts campaign-style declarations online' },
+    {
+      icon: '🎨',
+      text: 'Banner: <a href="https://www.pexels.com/photo/sticky-note-on-a-white-wall-8850836/" target="_blank">Tara Winstead · Pexels</a>'
+    }
+  ],
+
+  stats: {
+    'CONFIDENCE': 20,
+    'PLANNING': 3,
+    'VOLUME': 18,
+    'SELF-AWARENESS': 2,
+    'AMBITION': 17,
+    'FACT RETENTION': 4
+  },
+
+  skills: [
+    { name: 'Campaign Posting', val: '+12', prof: true },
+    { name: 'Turning Criticism Into Drama', val: '+11', prof: true },
+    { name: 'Public Declarations', val: '+10', prof: true },
+    { name: 'Answering Direct Questions', val: '-8', prof: false },
+    { name: 'Understanding Policy', val: '-7', prof: false }
+  ],
+
+  specialAbility: 'Wake Up, People (Recharge 5-6)',
+
+  passiveNote: 'Passive: Reform Aura. Any routine municipal issue can be reframed as evidence of systemic failure requiring immediate leadership change.',
+
+  post: `This town has needed new leadership for YEARS and honestly people are finally starting to wake up.
+
+Everybody keeps complaining about the same problems but then keeps voting for the same people over and over expecting different results.
+
+Thats literally insanity.
+
+I have REAL ideas that would completely transform this community if people would actually listen for once.`,
+
+  postDate: 'Late Night · Campaign Mode',
+  reactions: '16',
+  comments: '52 Comments',
+  shares: '7 Shares',
+
+  friends: ['rick', 'grant', 'gary']
+},
+doris: {
+  icon: 'images/doris-profile.jpg',
+  portrait: 'images/doris-profile.jpg',
+  imagePosition: 'center top',
+  imageFit: 'cover',
+  name: 'Mayor Doris "We’ve Always Done It This Way" Grindle',
+  label: 'Permanent Municipal Fixture',
+  archetype: 'Lawful Neutral · Human · Level 14 Entrenched Incumbent',
+  banner: 'images/doris-banner.jpg',
+
+  tagline: 'Change creates confusion.',
+
+  bio: 'Mayor Doris Grindle has held leadership positions in Small Town, MT for so long that many residents cannot remember exactly when it started. Her governing philosophy centers primarily around maintaining existing systems, avoiding unnecessary improvements, and surviving another election cycle through sheer inevitability. Though frequently criticized by residents, nobody ever seems willing to challenge her directly, largely because the position appears exhausting and spiritually corrosive.',
+
+  about: [
+    { icon: '🏛️', text: 'Has occupied town leadership roles for multiple decades' },
+    { icon: '🛑', text: 'Strongly opposes change regardless of potential benefit' },
+    { icon: '💰', text: 'Constantly fundraising for mysterious town-related expenses' },
+    { icon: '🤷', text: 'Rarely participates in community fundraisers personally' },
+    { icon: '📋', text: 'Believes “good enough” is the highest form of efficiency' },
+    { icon: '😐', text: 'Universally criticized yet consistently reelected through inertia' },
+    {
+      icon: '🎨',
+      text: 'Banner: <a href="https://www.pexels.com/photo/brown-bare-trees-under-orange-sky-during-sunset-10333094/" target="_blank">Scott Platt · Pexels</a>'
+    }
+  ],
+
+  stats: {
+    'POLITICAL ENDURANCE': 20,
+    'TRANSPARENCY': 3,
+    'CHANGE RESISTANCE': 19,
+    'COMMUNITY ENTHUSIASM': 2,
+    'SURVIVAL INSTINCT': 18,
+    'BUDGET CLARITY': 4
+  },
+
+  skills: [
+    { name: 'Avoiding Accountability', val: '+12', prof: true },
+    { name: 'Meeting Adjournment', val: '+10', prof: true },
+    { name: 'Fundraising Ambiguity', val: '+11', prof: true },
+    { name: 'Innovation', val: '-9', prof: false },
+    { name: 'Direct Answers', val: '-7', prof: false }
+  ],
+
+  specialAbility: 'Tabled Until Further Notice (Recharge 5-6)',
+
+  passiveNote: 'Passive: Institutional Inertia. New ideas gradually lose momentum after prolonged exposure to procedural delay and vague concerns about “how things look.”',
+
+  post: `I keep hearing people complain that “nothing changes around here” but what they fail to understand is stability matters.
+
+Every time some new idea comes through town everybody acts like we need to completely reinvent everything overnight.
+
+That is not how responsible leadership works.
+
+Also donations for the municipal improvement fund are still being accepted at the office during regular hours.`,
+
+  postDate: 'Midday · Office Closed Early',
+  reactions: '11',
+  comments: '61 Comments',
+  shares: '2 Shares',
+
+  friends: ['brenda', 'harlan', 'grant']
+},
+sadie: {
+  icon: 'images/sadie-profile.jpg',
+  portrait: 'images/sadie-profile.jpg',
+  imagePosition: 'center top',
+  imageFit: 'cover',
+  name: 'Sadie "Small Town Soul" Mercer',
+  label: 'Lifestyle Micro-Influencer',
+  archetype: 'Chaotic Neutral · Human · Level 8 Rustic Content Creator',
+  banner: 'images/sadie-banner.jpg',
+
+  tagline: 'Slow living. Strong coffee. Local roots.',
+
+  bio: 'Sadie documents what she calls “authentic small-town living” through constant social media updates involving coffee, soft lighting, rustic décor, and carefully framed slices of daily life. While she considers herself a growing lifestyle influencer, most of her audience consists of local residents quietly observing increasingly dramatic disputes involving chickens, zoning rules, and emotionally charged posts about freedom, homesteading, and negative energy.',
+
+  about: [
+    { icon: '☕', text: 'Creates lifestyle content centered around coffee and rural aesthetics' },
+    { icon: '📱', text: 'Refers to ordinary daily activities as “content creation”' },
+    { icon: '🧁', text: 'Runs a cottage bakery operation from home' },
+    { icon: '🐔', text: 'Strong emotional attachment to backyard chicken ownership' },
+    { icon: '😢', text: 'Recently experienced a public emotional breakdown over poultry regulations' },
+    { icon: '✨', text: 'Frames local disagreements as attacks on authenticity and creativity' },
+    {
+      icon: '🎨',
+      text: 'Banner: <a href="https://www.pexels.com/search/iced%20coffee%20country/" target="_blank">Sóc Năng Động · Pexels</a>'
+    }
+  ],
+
+  stats: {
+    'AESTHETIC CURATION': 19,
+    'EMOTIONAL STABILITY': 4,
+    'CONTENT CONFIDENCE': 17,
+    'REGULATION TOLERANCE': 2,
+    'CHICKEN ENTHUSIASM': 20,
+    'SELF-BRANDING': 18
+  },
+
+  skills: [
+    { name: 'Coffee Reel Creation', val: '+12', prof: true },
+    { name: 'Soft Lighting', val: '+10', prof: true },
+    { name: 'Emotional Story Posting', val: '+11', prof: true },
+    { name: 'Reading Ordinances', val: '-8', prof: false },
+    { name: 'Accepting Minor Regulation', val: '-9', prof: false }
+  ],
+
+  specialAbility: 'This Is My Safe Space (Recharge 5-6)',
+
+  passiveNote: 'Passive: Curated Reality. Visually calming content conceals increasingly stressful real-world situations occurring just outside the frame.',
+
+  post: `I honestly didnt even want to talk about this publicly but I’ve been crying all morning.
+
+Apparently wanting fresh eggs and a peaceful life is now something that needs PERMISSION and paperwork.
+
+This town says I either have to reduce my flock or pay fees and register everything like I’m some kind of industrial operation.
+
+I just wanted a simple life for my family and my followers.
+
+Anyway today’s cinnamon maple cold foam recipe will still be posted later 🤎🐓✨`,
+
+  postDate: 'Morning · Processing Heavy Emotions',
+  reactions: '46',
+  comments: '78 Comments',
+  shares: '9 Shares',
+
+  friends: ['ruth', 'linda', 'carol']
 },
 };
 
