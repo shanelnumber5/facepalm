@@ -1611,6 +1611,321 @@ Anyway today’s cinnamon maple cold foam recipe will still be posted later 🤎
 
   friends: ['ruth', 'linda', 'carol']
 },
+willow: {
+  icon: 'images/willow-profile.jpg',
+  portrait: 'images/willow-profile.jpg',
+  imagePosition: 'center top',
+  imageFit: 'cover',
+  name: 'Willow "Nature Provides" Hart',
+  label: 'Holistic Living Evangelist',
+  archetype: 'Chaotic Good · Human · Level 7 Natural Wellness Advocate',
+  banner: 'images/willow-banner.jpg',
+
+  tagline: 'Your body already knows how to heal.',
+
+  bio: 'Willow is deeply committed to natural living practices and believes modern society has disconnected people from how humans are supposed to exist. She advocates strongly for raw milk, herbal remedies, essential oils, homemade food, sunlight, and avoiding unnecessary chemicals whenever possible. While generally kind and well-intentioned, her confidence in holistic wellness often extends far beyond her actual expertise.',
+
+  about: [
+    { icon: '🥛', text: 'Strong supporter of raw milk and local farm sourcing' },
+    { icon: '🌿', text: 'Uses essential oils for nearly every situation imaginable' },
+    { icon: '☀️', text: 'Believes sunlight and grounding are medically underrated' },
+    { icon: '🧴', text: 'Distrustful of processed foods and “chemical-heavy products”' },
+    { icon: '🍯', text: 'Makes homemade tinctures, teas, and infused syrups' },
+    { icon: '😌', text: 'Maintains a calm tone while saying increasingly questionable things' },
+    {
+      icon: '🎨',
+      text: 'Banner: <a href="https://unsplash.com/photos/black-and-white-labeled-bottle-Pm0K9Y3EPUc" target="_blank">Elsa Olofsson · Unsplash</a>'
+    }
+  ],
+
+  stats: {
+    'HOLISTIC CONFIDENCE': 20,
+    'CHEMICAL FEAR': 18,
+    'CALM ENERGY': 17,
+    'SCIENTIFIC RIGOR': 4,
+    'HOMEMADE REMEDIES': 19,
+    'BOUNDARY BETWEEN WELLNESS AND MEDICINE': 3
+  },
+
+  skills: [
+    { name: 'Oil Recommendation', val: '+12', prof: true },
+    { name: 'Herbal Tea Preparation', val: '+10', prof: true },
+    { name: 'Natural Lifestyle Content', val: '+9', prof: true },
+    { name: 'Accepting Modern Medicine', val: '-7', prof: false },
+    { name: 'Evidence Evaluation', val: '-6', prof: false }
+  ],
+
+  specialAbility: 'Try Lavender First (Recharge 5-6)',
+
+  passiveNote: 'Passive: Natural Remedy Aura. Nearby individuals become increasingly likely to receive unsolicited wellness recommendations involving oils, herbs, minerals, or hydration.',
+
+  post: `Friendly reminder that a lot of modern health problems started when people stopped trusting nature and started trusting corporations.
+
+Raw milk, fresh air, mineral rich food, sunlight, herbs, rest, and less stress does more than people realize.
+
+Also if anyone needs more magnesium spray let me know because I made another batch this morning 🌿✨`,
+
+  postDate: 'Morning · Grounding Barefoot',
+  reactions: '29',
+  comments: '41 Comments',
+  shares: '6 Shares',
+
+  friends: ['sadie', 'ruth', 'carol']
+},
+pastor_ellis: {
+  icon: 'images/ellis-profile.jpg',
+  portrait: 'images/ellis-profile.jpg',
+  imagePosition: 'center top',
+  imageFit: 'cover',
+  name: 'Pastor Ellis "The World Is Watching" Grady',
+  label: 'Insular Community Shepherd',
+  archetype: 'Lawful Evil · Human · Level 13 Spiritual Authority Figure',
+  banner: 'images/ellis-banner.jpg',
+
+  tagline: 'The truth is narrow for a reason.',
+
+  bio: 'Pastor Ellis leads a highly insular church community in Small Town, MT centered around strict social expectations, loyalty, and separation from outside influence. Members are encouraged to maintain close ties within the church while viewing broader culture with suspicion. Ellis presents himself as calm, humble, and deeply caring, though many former attendees describe the environment as emotionally controlling and difficult to leave socially.',
+
+  about: [
+    { icon: '⛪', text: 'Leads a tightly interconnected church community' },
+    { icon: '📖', text: 'Frames most modern culture as spiritually dangerous' },
+    { icon: '👀', text: 'Strong emphasis on accountability and “guarding influences”' },
+    { icon: '🤝', text: 'Church functions as primary social structure for many members' },
+    { icon: '🧠', text: 'Uses calm language to communicate intense expectations' },
+    { icon: '🚪', text: 'Former members often describe difficulty reconnecting socially afterward' },
+    {
+      icon: '🎨',
+      text: 'Banner: <a href="https://unsplash.com/photos/blue-sky-with-white-clouds-c7YYeMemTzw" target="_blank">Jessica Mangano · Unsplash</a>'
+    }
+  ],
+
+  stats: {
+    'CHARISMA': 18,
+    'SOCIAL INFLUENCE': 20,
+    'CERTAINTY': 19,
+    'OUTSIDE TRUST': 2,
+    'COMMUNITY CONTROL': 17,
+    'SELF-DOUBT': 1
+  },
+
+  skills: [
+    { name: 'Soft-Spoken Authority', val: '+12', prof: true },
+    { name: 'Community Consolidation', val: '+11', prof: true },
+    { name: 'Moral Framing', val: '+10', prof: true },
+    { name: 'Accepting Criticism', val: '-8', prof: false },
+    { name: 'Encouraging Independence', val: '-9', prof: false }
+  ],
+
+  specialAbility: 'Concerned For Your Soul (Recharge 5-6)',
+
+  passiveNote: 'Passive: Social Gravity. Members gradually reduce outside relationships and activities after prolonged exposure to church-centered community structure.',
+
+  post: `A reminder that not every opportunity presented by the world is healthy for your spirit.
+
+People today are more connected than ever and yet more isolated, anxious, and lost.
+
+There is peace in structure, truth, and surrounding yourself with people who genuinely care about your walk and accountability.
+
+Be careful who influences your home and your family.`,
+
+  postDate: 'Sunday Evening · After Service',
+  reactions: '38',
+  comments: '24 Comments',
+  shares: '11 Shares',
+
+  friends: ['rick', 'keith', 'carol']
+},
+tiffany: {
+  icon: 'images/tiffany-profile.jpg',
+  portrait: 'images/tiffany-profile.jpg',
+  imagePosition: 'center top',
+  imageFit: 'cover',
+  name: 'Tiffany "We’re Just Friends" Lawson',
+  label: 'Community Chaos Coordinator',
+  archetype: 'Chaotic Neutral · Human · Level 11 Boundary-Free Motivator',
+  banner: 'images/tiffany-banner.jpg',
+
+  tagline: 'Positive vibes only 💕',
+
+  bio: 'Tiffany coaches youth activities in Small Town, MT and maintains an extremely active social presence built around encouragement, motivation, and relentless community involvement. Unfortunately, her personal life has become increasingly complicated due to overlapping relationships, vague boundaries, and a tendency to treat emotional consequences as unfortunate misunderstandings. Despite ongoing drama, Tiffany continues operating with unwavering optimism and aggressive positivity.',
+
+  about: [
+    { icon: '🏐', text: 'Heavily involved in local coaching and youth activities' },
+    { icon: '📱', text: 'Posts motivational content during active interpersonal disasters' },
+    { icon: '💕', text: 'Frequently describes complicated situations as “people being negative”' },
+    { icon: '🎈', text: 'Currently planning an extremely public gender reveal event' },
+    { icon: '😬', text: 'Town speculation surrounding the pregnancy remains intense' },
+    { icon: '✨', text: 'Believes authenticity means never feeling embarrassed publicly' },
+    {
+      icon: '🎨',
+      text: 'Banner: <a href="https://www.pexels.com/search/gender%20reveal/" target="_blank">0l R · Pexels</a>'
+    }
+  ],
+
+  stats: {
+    'SOCIAL ENERGY': 20,
+    'BOUNDARY RECOGNITION': 2,
+    'OPTIMISM': 18,
+    'SELF-AWARENESS': 3,
+    'PUBLIC DRAMA GENERATION': 19,
+    'COMMUNITY VISIBILITY': 17
+  },
+
+  skills: [
+    { name: 'Motivational Posting', val: '+11', prof: true },
+    { name: 'Emotional Deflection', val: '+10', prof: true },
+    { name: 'Event Planning', val: '+9', prof: true },
+    { name: 'Reading Consequences', val: '-8', prof: false },
+    { name: 'Private Decision Making', val: '-9', prof: false }
+  ],
+
+  specialAbility: 'Positive Energy Only (Recharge 5-6)',
+
+  passiveNote: 'Passive: Community Spillover. Personal drama automatically expands into school events, local gossip networks, and social media discussions within 24 hours.',
+
+  post: `Just a reminder that happiness really triggers people who are unhappy with themselves 💕
+
+Life is too short to live according to other peoples expectations.
+
+Anyway we are SO excited for the gender reveal this weekend!! Smoke cannons, cupcakes, games, photos, the whole thing 🎈✨
+
+No negativity please. We are focusing on love and positivity only.`,
+
+  postDate: 'Evening · Comment Monitoring Active',
+  reactions: '54',
+  comments: '117 Comments',
+  shares: '8 Shares',
+
+  friends: ['sadie', 'bev', 'wayne']
+},
+janice: {
+  icon: 'images/janice-profile.jpg',
+  portrait: 'images/janice-profile.jpg',
+  imagePosition: 'center top',
+  imageFit: 'cover',
+  name: 'Janice "Why Would Anyone Leave?" Palmer',
+  label: 'Unofficial Tourism Ambassador',
+  archetype: 'Lawful Good · Human · Level 9 Civic Optimist',
+  banner: 'images/janice-banner.jpg',
+
+  tagline: 'Everything you need is right here.',
+
+  bio: 'Janice is deeply committed to promoting Small Town, MT as an ideal place to live despite mounting evidence to the contrary. She regularly posts about the town’s “many amenities” which primarily include a gas station, school events, seasonal craft fairs, and the fact that parking is easy. Criticism of the town is treated as both ungrateful and deeply confusing to her.',
+
+  about: [
+    { icon: '🏘️', text: 'Strong advocate for small-town living and community values' },
+    { icon: '📣', text: 'Frequently promotes local events with extreme enthusiasm' },
+    { icon: '⛽', text: 'Describes basic conveniences as major amenities' },
+    { icon: '🎪', text: 'Treats annual events as nationally significant attractions' },
+    { icon: '😤', text: 'Cannot understand why young people move away' },
+    { icon: '🧠', text: 'Believes community spirit compensates for all missing infrastructure' },
+    {
+      icon: '🎨',
+      text: 'Banner: <a href="https://www.pexels.com/photo/buildings-in-village-5244957/" target="_blank">Chris Flaten · Pexels</a>'
+    }
+  ],
+
+  stats: {
+    'CIVIC PRIDE': 20,
+    'REALISM': 3,
+    'EVENT ENTHUSIASM': 18,
+    'TOWN LOYALTY': 19,
+    'PERSPECTIVE': 4,
+    'FACEPALM BOOSTERISM': 17
+  },
+
+  skills: [
+    { name: 'Community Promotion', val: '+12', prof: true },
+    { name: 'Event Sharing', val: '+10', prof: true },
+    { name: 'Defending Local Culture', val: '+9', prof: true },
+    { name: 'Acknowledging Limitations', val: '-8', prof: false },
+    { name: 'Understanding Urban Appeal', val: '-7', prof: false }
+  ],
+
+  specialAbility: 'Hidden Gem (Passive)',
+
+  passiveNote: 'Passive: Civic Reframing. Ordinary town features become increasingly impressive when described repeatedly with enough enthusiasm.',
+
+  post: `People always say theres “nothing to do” here and honestly I just dont understand that mindset.
+
+We have school sports, two parks, the summer fair, church activities, craft sales, community breakfasts, and one of the friendliest gas stations anywhere around.
+
+Not every town can say that.
+
+Some people are so focused on what we dont have that they forget how special simple living really is ❤️`,
+
+  postDate: 'Afternoon · Sharing Another Event Flyer',
+  reactions: '27',
+  comments: '34 Comments',
+  shares: '5 Shares',
+
+  friends: ['carol', 'linda', 'doris']
+},
+amber: {
+  icon: 'images/amber-profile.jpg',
+  portrait: 'images/amber-profile.jpg',
+  imagePosition: 'center top',
+  imageFit: 'cover',
+  name: 'Amber "Cash Only" Devereaux',
+  label: 'After-Hours Network Specialist',
+  archetype: 'Chaotic Neutral · Human · Level 10 Nightlife Survivor',
+  banner: 'images/amber-banner.jpg',
+
+  tagline: 'No drama. Serious inquiries only.',
+
+  bio: 'Amber works nights at a regional strip club and has developed an extensive social network spanning nearly every demographic in and around Small Town, MT. She is known for hosting chaotic gatherings, knowing everybody’s business, and somehow always being connected to whatever questionable situation is currently unfolding. Amber is currently attempting to sell her house, though the heavily customized basement has become a recurring obstacle during showings.',
+
+  about: [
+    { icon: '🌙', text: 'Works nights at a regional adult entertainment venue' },
+    { icon: '🏠', text: 'Currently attempting to sell a highly personalized home' },
+    { icon: '🪩', text: 'Basement includes a permanently installed dance pole' },
+    { icon: '📱', text: 'Knows everyone and communicates mostly through late-night messages' },
+    { icon: '💸', text: 'Strong preference for cash transactions and vague arrangements' },
+    { icon: '🍸', text: 'Frequently surrounded by rapidly escalating situations' },
+    {
+      icon: '🎨',
+      text: 'Banner: <a href="https://www.pexels.com/photo/red-ferrari-at-southampton-car-show-36690568/" target="_blank">George Blatchford · Pexels</a>'
+    }
+  ],
+
+  stats: {
+    'SOCIAL CONNECTIONS': 20,
+    'CHAOS MAGNETISM': 19,
+    'FINANCIAL STABILITY': 4,
+    'CONFIDENCE': 18,
+    'LATE NIGHT ENERGY': 17,
+    'QUESTIONABLE DECISION MAKING': 16
+  },
+
+  skills: [
+    { name: 'Reading People Quickly', val: '+11', prof: true },
+    { name: 'Crisis Navigation', val: '+10', prof: true },
+    { name: 'Avoiding Specific Questions', val: '+9', prof: true },
+    { name: 'Long-Term Planning', val: '-7', prof: false },
+    { name: 'Maintaining Calm Environments', val: '-8', prof: false }
+  ],
+
+  specialAbility: 'You Didn’t Hear It From Me (Recharge 5-6)',
+
+  passiveNote: 'Passive: Social Gravity Well. Rumors, drama, and complicated interpersonal situations naturally accumulate around Amber over time.',
+
+  post: `PRICE REDUCED AGAIN.
+
+3 bedroom, 2 bath, finished basement, updated kitchen, lots of storage.
+
+And YES the pole stays because removing it damaged the ceiling last time.
+
+Honestly its a really nice setup if people would stop acting weird during walkthroughs.
+
+Message me if serious because I’m tired of wasting my time with people who just want to look around.`,
+
+  postDate: '11:48 PM · Frustrated Seller Energy',
+  reactions: '41',
+  comments: '67 Comments',
+  shares: '5 Shares',
+
+  friends: ['tiffany', 'gary', 'wayne']
+},
 };
 
 
